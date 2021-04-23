@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/trending.css">
+</head>
+<body>
+    <div id = "mainBody">
+        <div id="subBody">
+            <div id = "topBar">
+                <div id = "topBarContent">
+                    <img id = "trendZomatoText" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png">
+
+                    <!-- Search city and cuisine bar -->
+                    <div class = "searchCity">
+                        <div id = "city">
+                            <img id="location" src = "icons/room-24px.svg">
+                            <input id = "cityText" type="text" placeholder="New York">
+                            <img id = "dropDownArrow" class = "dArrow" src="icons/arrow_drop_down-24px.svg">
+                        </div>
+                        <p id = "separator">|</p>
+                        <div id = "dish">
+                            <input id = "dishText" type="text" placeholder="Search for restaurant, cuisine or a dish">
+                            <img id = "searchIcon" src="icons/search.svg">
+                        </div>
+                    </div>
+
+                    <div id = "trendingProfile">
+                        <p class="logSign">LOGIN</p>
+                        <p class="logSign">SIGN UP</p>
+                    </div>
+
+                    <!-- recommendations box -->
+                    <div id = "recommendations">     
+                        <div id = "currentLocaion">
+                            <img id = "currentLocaionIcon" src="icons/\/icons8-location-64.png">
+                            <p id="currentLocationText">Detect current location</p>
+                        </div>
+                        <div id = "popularText" >
+                            <p>Popular Cities</p>
+                        </div>
+                        <div class="recomCities">
+                            <p class="recomCitiesText">Washington DC</p>
+                        </div>
+                        <div class="recomCities">
+                            <p class="recomCitiesText">Chicago</p>
+                        </div>
+                        <div id = "lastRecom" class="recomCities">
+                            <p class="recomCitiesText">San Fransisco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "trendingBanner">
+                <div id="trendingBannerText" class="bannerText">Best of New York</div>
+                <div id="subTrendingBannerText" class="bannerText">Best places and restaurants in New York</div>
+                <div id="trendingPlaceNumber" class="bannerText">20 Place(s)</div>
+                <img id = "trendingBannerImage"src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production.gtsstatic.net%2Fresources%2Fsiteresources%2Fmy%20folder%2Fny-statue%20copy.jpg&option=N&w=1200&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production.gtsstatic.net%2Fresources%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_400x300.jpg">
+            </div>
+
+            <!--Restaurant and their dishes cards with ratings-->
+            <div id = "cardContainer">
+                <div class = "cards" onmouseover="displayBookmark(0)" onmouseout="disappearBoorkmark(0)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8pm4edR7SFL9tx_IPIIxPM4QO1MY1SAPqoA&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">4.3</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                    
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(1)" onmouseout="disappearBoorkmark(1)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzavig-xiB5DKmwqPhzaZST5k2S2CZwacATQ&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">4.8</div>      
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>          
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(2)" onmouseout="disappearBoorkmark(2)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6ZUSn9oKU4_RJdXP73Ui4-9XYmPyqLiXIvw&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">3.3</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(3)" onmouseout="disappearBoorkmark(3)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRd4LZy9DdFp6GzPN9ZeHSHGNy_K0eR3gmoYA&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">4.0</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+
+
+                <div class = "cards" onmouseover="displayBookmark(4)" onmouseout="disappearBoorkmark(4)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-OOf10qb1y1FmRoaiUdDEE2bO7JFzSz0wbg&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">3.9</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(5)" onmouseout="disappearBoorkmark(5)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTK5TlMfjfAHNWooHaHHOCQhVsD1nnI0Wdg4Q&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">3.7</div>      
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>          
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(6)" onmouseout="disappearBoorkmark(6)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQV9Zcwio5nv4uRlEZoNTewpwQB-luvI98hWA&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">4.5</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(7)" onmouseout="disappearBoorkmark(7)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSdmNHopSKIFsG-wGuHuT20fDKVJRWutG-KmA&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">4.0</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+
+
+                <div class = "cards" onmouseover="displayBookmark(8)" onmouseout="disappearBoorkmark(8)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTd6djFGFy-QNnV4vzoAvAxia9s90SJVlRC9g&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">3.1</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(9)" onmouseout="disappearBoorkmark(9)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLynpL0NQ5F5pR23160NXzTm9eBuhtRSq3Hg&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">3.4</div>      
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>          
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(10)" onmouseout="disappearBoorkmark(10)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS41u_xzTG8GnYnC0q48Gsy24gyiJZyPjkdfg&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">4.1</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+                <div class = "cards" onmouseover="displayBookmark(11)" onmouseout="disappearBoorkmark(11)" onclick="openFile('dish.html')">
+                    <img class = "cardBookmark" src="icons/bookmark.svg">
+                    <img class = "imgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKVJT-V8NYHk7GTKHkV7MRF-3-FPrCm1-5_Q&usqp=CAU">
+                    <div class="cardText">Lorem Ipsum</div>
+                    <img class = "cardStar" src="icons/rating_star.svg">
+                    <div class = "cardRatings">4.6</div>
+                    <div class = "cardAddress">consectetur adipiscing elit <br> tempor incididunt magna aliqua</div>
+                </div>
+            </div>
+
+            <!--Trending Page more collection container-->
+            <div id = "trendingMoreCollection">
+                <div id = "moreCollectionText">More Collection</div>
+                <div id = "moreCollectionCardContainer">
+                    <div class="moreCollectionCards">
+                        <img class = "moreCollectionImg" src="https://b.zmtcdn.com/data/collections/e1d5e8f900dbca01d11f353ef4b6a97c_1581662454.jpg">
+                        <div class="moreCollectionText">Trending this Week</div>
+                        <div class="subMoreCollectionText">30 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="img/collections/trending/more_collection/new-york-city.jpg">
+                        <div class="moreCollectionText">Best of New York</div>
+                        <div class="subMoreCollectionText">15 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/083468dbee9b51b10b7e6d8c9f091b4f_1554892925.jpg">
+                        <div class="moreCollectionText">Live Sports Screening</div>
+                        <div class="subMoreCollectionText">8 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/d5fee6a5e24cda1629f810c3836dcb1f_1582106775.jpg">
+                        <div class="moreCollectionText">For the Planet</div>
+                        <div class="subMoreCollectionText">10 Places</div>
+                    </div>
+
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/b1d388518012c80696487c08ca08e325_1582201041.jpg">
+                        <div class="moreCollectionText">Outdoor Seating</div>
+                        <div class="subMoreCollectionText">25 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/bc0c37f8fc87da896641714b9ef7f0b7_1575621158.jpg">
+                        <div class="moreCollectionText">Sweeth Tooth</div>
+                        <div class="subMoreCollectionText">17 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/3242a1273d76b53b31c70124fb66ad7e_1535355181.jpg">
+                        <div class="moreCollectionText">Healthy Eats</div>
+                        <div class="subMoreCollectionText">13 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/25b0494ade2359d4e6d90e1c73ea6672_1582082248.jpg">
+                        <div class="moreCollectionText">For the Family</div>
+                        <div class="subMoreCollectionText">90 Places</div>
+                    </div>
+
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/738be706f86548e91081290544449919_1427112719_l.jpg">
+                        <div class="moreCollectionText">Kebab Places</div>
+                        <div class="subMoreCollectionText">10 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/f672e9556e44fe33ff47bf751639c0bd_1535611700.jpg">
+                        <div class="moreCollectionText">Gourment Pizza</div>
+                        <div class="subMoreCollectionText">27 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/b9cc31cacf20b1423830c877d438eff8_1582027317.jpg">
+                        <div class="moreCollectionText">Insta-Worthy</div>
+                        <div class="subMoreCollectionText">20 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/abe9fadcd4351a5ea8b6d1213b1356c6_1514874135.jpg">
+                        <div class="moreCollectionText">Kickass Burgers</div>
+                        <div class="subMoreCollectionText">24 Places</div>
+                    </div>
+
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/e0ce96d87dbbd975662d28bb43b335ac_1582603125.jpg">
+                        <div class="moreCollectionText">Luxury Dining</div>
+                        <div class="subMoreCollectionText">18 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/352c6cdde879698ef40f2137b2a44fe4_1582539034.jpg">
+                        <div class="moreCollectionText">Great Coffee</div>
+                        <div class="subMoreCollectionText">30 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/4c645d68d0ad4c624abab81374c8997c_1582106595.jpg">
+                        <div class="moreCollectionText">where's the Party?</div>
+                        <div class="subMoreCollectionText">15 Places</div>
+                    </div>
+                    <div class="moreCollectionCards">
+                        <img class="moreCollectionImg" src="https://b.zmtcdn.com/data/collections/75f426b58bbbd3515e3e686c5566d3f6_1490614594.jpg">
+                        <div class="moreCollectionText">Gigs and Events</div>
+                        <div class="subMoreCollectionText">12 Places</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id = "languages">     
+                <div class="languageOptions">
+                    <p class="languageText">Spanish</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">Italian</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">Korean</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">Greek</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">Cestina</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">Polish</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">French</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">Arabic</p>
+                </div>
+                <div class="languageOptions">
+                    <p class="languageText">German</p>
+                </div>
+            </div>
+
+            <div class="optionDiv countryLoc">
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                    <p class="countryName">India</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png">
+                    <p class="countryName">USA</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png">
+                    <p class="countryName">Australia</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg">
+                    <p class="countryName">Brazil</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png">
+                    <p class="countryName">Canada</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png">
+                    <p class="countryName">UK</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png">
+                    <p class="countryName">Portugal</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png">
+                    <p class="countryName">Italy</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg">
+                    <p class="countryName">Argentina</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg">
+                    <p class="countryName">Qatar</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg">
+                    <p class="countryName">New Zealand</p>
+                </div>
+                <div class="countryCard">
+                    <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg">
+                    <p class="countryName">Switzerland</p>
+                </div>
+                <div class="divTail"></div>
+            </div>
+            <div class = 'optionDiv'>
+                <p class="langOption">English</p>
+                <p class="langOption">Türkçe</p>
+                <p class="langOption">हिंदी</p>
+                <p class="langOption">Português (BR)</p>
+                <p class="langOption">Indonesian</p>
+                <p class="langOption">Português (PT)</p>
+                <p class="langOption">Español</p>
+                <div class="divTail"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id = "footerContainer">
+            <div id="footerBar">
+                <div id = "footerZomatoText">Zomato</div>
+                
+                <div class="optionContainer">
+                    <div class="fOption">
+                        <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                        <p class="countryName">India</p>
+                    </div>
+                    <div class="fOption">
+                        <img class="countryFlag" src="icons/language-black-18dp.svg">
+                        <p class="countryName">English</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div id="footerLinksContainer">
+                <div class="footerLinksCards">
+                    <div class="linksHead">COMPANY</div>
+                    <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
+                    <div class="links">Blog</div>
+                    <div class="links" onclick="openFile('career.html')">Careers</div>
+                    <div class="links">Report Fraud</div>
+                    <div class="links" onclick="openFile('contact.html')">Contact</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR FOODIES</div>
+                    <div class="links">Code for Conduct</div>
+                    <div class="links">Community</div>
+                    <div class="links">Blogger Help</div>
+                    <div class="links">Developers</div>
+                    <div class="links">Mobile Apps</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR RESTAURANTS</div>
+                    <div class="links">Add Restaurant</div>
+                    <div class="links">Claim your Listing</div>
+                    <div class="links">Business App</div>
+                    <div class="links">Restaurant Widgets</div>
+                    <div class="links">Products for Businesses</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR YOU</div>
+                    <div class="links">Privacy</div>
+                    <div class="links">Terms</div>
+                    <div class="links">Security</div>
+                    <div class="links">Sitemap</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">SOCIAL LINKS</div>
+                    <div id = "socialMediaLinks">
+                        <img class="socialIcon" src = "icons/facebook.png">
+                        <img class="socialIcon" src = "icons/tweeter.svg">
+                        <img class="socialIcon" src = "icons/instagram.png">
+                    </div>
+                    <div id = "download">
+                        <img href = "https://bnc.lt/download-z-android"  class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
+                        <img href = "https://bnc.lt/download-zomato-ios " class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/openFile.js"></script>
+</body>
+</html>

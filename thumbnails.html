@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail</title>
+    <link rel = "stylesheet" href = "css/thumbnails.css">
+</head>
+<body>
+    <div id="subBody">
+        <div id = "topBar">
+            <div id = "topBarContent">
+                <img id = "trendZomatoText" src="https://b.zmtcdn.com/images/zomato_white_logo_new.svg">
+                <div id = "trendingProfile">
+                    <p class="logSign">LOGIN</p>
+                    <p class="logSign">SIGN UP</p>
+                </div>
+            </div>
+        </div>
+        <div id = "mainNavOptions">
+            <div id="navContent">
+                <div id = "navLeftPart">
+                    <img class="navIcon" src="https://b.zmtcdn.com/images/icons/get-the-app-plain.svg" alt="">
+                    <p class="navText">Get the App</p>
+                </div>
+                <div id="navRightPart">
+                    <img class="navIcon" src="https://b.zmtcdn.com/images/icons/order-online.svg">
+                    <p class="navText">Order Food</p>
+                    <img class="navIcon" src="https://b.zmtcdn.com/images/icons/book-a-table.svg">
+                    <p class="navText">Book a Table</p>
+                    <img class="navIcon" src="https://www.zomato.com/images/red/pro_badge.svg">
+                    <p class="navText">Zomato Pro</p>
+                </div>
+            </div>
+        </div>
+        <p id="mainHeading">Order food online</p>
+        
+        <div id="mainContentContainer">
+            <div id="leftFilterBar">
+                <div class="divs">
+                    <p id="firstHead">Filters</p>
+                    <div class="checkBoxes">
+                        <input type="checkbox" class="checkBox" name="zomatoPro">
+                        <label for="zomatoPro" class="checkBoxText">zomato pro partner</label>
+                    </div>
+                </div>
+
+                <div class="divs">
+                    <div id="check">
+                        <input type="checkbox" class="checkBox" name="zomatoPro">
+                        <label for="zomatoPro" id="checkText" class="checkBoxText">order food online</label>
+                    </div>
+
+                    <p class="head">Quick Filters</p>
+                    <div class="checkBoxes">
+                        <input type="checkbox" class="checkBox" name="zomatoPro">
+                        <label for="zomatoPro" class="checkBoxText">Promotions</label>
+                    </div>
+                    <div class="checkBoxes">
+                        <input type="checkbox" class="checkBox" name="zomatoPro">
+                        <label for="zomatoPro" class="checkBoxText">Pure veg</label>
+                    </div>
+                    <div class="checkBoxes">
+                        <input type="checkbox" class="checkBox" name="zomatoPro">
+                        <label for="zomatoPro" class="checkBoxText">Online Payments</label>
+                    </div>
+                </div>
+
+                <div class="divs">
+                    <p class="head">Sort By</p>
+                    <div class="sort">
+                        <p id="level">Popularity</p>
+                        <p id ="order">high to low</p>
+                    </div>
+
+                    <div class="sort" onmouseover="changeColor(0)" onmouseout="changeColorBack(0)">
+                        <p class = "menu">Delivery Rating</p>
+                        <p class="rate">high to low</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(1)" onmouseout="changeColorBack(1)">
+                        <p class = "menu">Rating</p>
+                        <p class="rate">high to low</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(2)" onmouseout="changeColorBack(2)">
+                        <p class = "menu">Recently Added</p>
+                        <p class="rate">new to old</p>
+                    </div>
+                </div>
+
+                <div class="divs">
+                    <p class="head">Cuisine</p>
+                    <div class="sort" onmouseover="changeColor(3)" onmouseout="changeColorBack(3)">
+                        <p class="menu">Fast Food</p>
+                        <p class="rate">$4.00</p>
+                    </div>
+                    <div class="sort">
+                        <p class="menu" onmouseover="changeColor(4)" onmouseout="changeColorBack(4)">Beverages</p>
+                        <p class="rate">$0.70</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(5)" onmouseout="changeColorBack(5)">
+                        <p class="menu">Chinese</p>
+                        <p class="rate">$3.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(6)" onmouseout="changeColorBack(6)">
+                        <p class="menu">Sandwiches</p>
+                        <p class="rate">$2.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(7)" onmouseout="changeColorBack(7)">
+                        <p class="menu">Ice Cream</p>
+                        <p class="rate">$1.50</p>
+                    </div>
+                </div>
+
+                <div class="divs">
+                    <p class="head">Delivery Time</p>
+                    <div class="sort" onmouseover="changeColor(8)" onmouseout="changeColorBack(8)">
+                        <p class="menu">Up to 30 minutes</p>
+                        <p class="rate">$7.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(9)" onmouseout="changeColorBack(9)">
+                        <p class="menu">Up to 45 minutes</p>
+                        <p class="rate">$10.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(10)" onmouseout="changeColorBack(10)">
+                        <p class="menu">Up to 60 minutes</p>
+                        <p class="rate">$10.50</p>
+                    </div>
+                </div>
+
+                <div class="divs">
+                    <p class="head">Cost for Two</p>
+                    <div class="sort" onmouseover="changeColor(11)" onmouseout="changeColorBack(11)">
+                        <p class="menu">Less than $4.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(12)" onmouseout="changeColorBack(12)">
+                        <p class="menu">$4.00 - $8.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(13)" onmouseout="changeColorBack(13)">
+                        <p class="menu">$8.00 - $12.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(14)" onmouseout="changeColorBack(14)">
+                        <p class="menu">$12.00 - $16.00</p>
+                    </div>
+                </div>
+
+                <div class="divs">
+                    <p class="head">Minimum order</p>
+                    <div class="sort" onmouseover="changeColor(11)" onmouseout="changeColorBack(11)">
+                        <p class="menu">Upto $2.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(12)" onmouseout="changeColorBack(12)">
+                        <p class="menu">Upto $4.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(13)" onmouseout="changeColorBack(13)">
+                        <p class="menu">Upto $8.00</p>
+                    </div>
+                    <div class="sort" onmouseover="changeColor(14)" onmouseout="changeColorBack(14)">
+                        <p class="menu">Upto $12.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rightContainer">
+                <div id="topContainer">
+                    <div id="leftPart">
+                        <p class="searchText">Search in...</p>
+                        <div id="leftSearchBar">
+                            <div id="left">
+                                <img class="icon" src="icons/cursor.svg">
+                                <input type="text" id="placeSearchText" placeholder="Please select your delivery location..."></p>
+                            </div>
+                            <div id="right">
+                                <img id="locIcon" src="icons/current_location.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="rightPart">
+                        <p class="searchText">Search in...</p>
+                        <div id="rightSearchBar">
+                            <img class="icon" src="icons/search.svg">
+                            <input type="text" id="restaurantSearchText" placeholder="Search for restaurants and cuisines..."></input>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bottomConatiner">
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/buffalo-wings-77108e8.jpg?quality=90&resize=500%2C454">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg"><p class="ratings">4.5(3000 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $1</p>
+                                    <li>Upto 30 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://static01.nyt.com/images/2019/12/11/dining/05best-hungry-dish4/05best-hungry-dish4-superJumbo-v2.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.0(2300 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $1.5</p>
+                                    <li>Upto 25 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://media.timeout.com/images/105523407/image.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.9(2100 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $2</p>
+                                    <li>Upto 35 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://i.pinimg.com/originals/ff/16/39/ff16395bb0cd04540ab2fd1708bda28b.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.0(2250 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $1</p>
+                                    <li>Upto 20 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://spoonuniversity.com/wp-content/uploads/sites/75/2016/03/FINISHED-peter-luger-steakhouse-porterhouse-new-york.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg"><p class="ratings">4.6(3040 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $1</p>
+                                    <li>Upto 25 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://media.timeout.com/images/104098973/image.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.4(1800 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $2</p>
+                                    <li>Upto 35 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://media1.popsugar-assets.com/files/thumbor/KCgGQlZpDZ0G2-gRBu5NZgmEs7U/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/05/15/814/n/1922195/abf5ba405ebee04bcf00b5.23483455_/i/best-new-york-city-food-deliveries-nationwide.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.8(2080 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $1.5</p>
+                                    <li>Upto 30 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://149349412.v2.pressablecdn.com/wp-content/uploads/2017/01/Cherry-Sour-and-Duck-Papperadelle-Woodford-Reserve-Grayze-Cocktail-Conference-Paired-Dinner-Hero-1000x683.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.8(2080 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $1.5</p>
+                                    <li>Upto 30 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://mk0pourmybeer0ij0snd.kinstacdn.com/wp-content/uploads/2020/01/beer-filled-mug-on-table-1552630-e1578326365853-768x576.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.2(2400 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $2</p>
+                                    <li>Upto 20 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://media.timeout.com/images/104098214/630/472/image.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.1(2320 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $2</p>
+                                    <li>Upto 30 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://www.disneyfoodblog.com/wp-content/uploads/2019/04/Black-Tap-Craft-Burgers-and-Shakes-april-2019-crazyshakes-crazy-shakes-cake-shake-bam-bam-cookie-shake-3-450x600.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg"><p class="ratings">4.5(3090 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $4</p>
+                                    <li>Upto 35 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://img.theculturetrip.com/wp-content/uploads/2017/10/recession-special-at-grays-papaya-l-david-joyce-flickr.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.3(2500 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $1</p>
+                                    <li>Upto 25 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://d2rf0detuhmti.cloudfront.net/wp-content/uploads/2019/08/woodford-pair-share-perch-restaurant-richmond-01-2.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.4(2610 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $5</p>
+                                    <li>Upto 35 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://www.gobourbon.com/wp-content/uploads/2016/12/WR-editedpostLR-2.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.4(2610 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $4</p>
+                                    <li>Upto 35 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_430,h_246/https://worldoffoodanddrink.worldtravelguide.net/wp-content/uploads/sites/3/2017/11/shu-New-York-SoulFood-Chicken-and-waffles-206484358-Joshua-Resnick-430x246.jpg">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.3(2510 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $3</p>
+                                    <li>Upto 25 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderCard" onclick="openFile('dish.html')">
+                        <div class="top">
+                            <img class="cardImg" src="https://www.gannett-cdn.com/media/2016/10/02/USATODAY/USATODAY/636110376059575147-Toloache.JPG?width=2560">
+                            <div class="cardDesc">
+                                <h1 class="cardHead">Loren Ipsum</h1>
+                                <div class="review">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/red_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg">
+                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.5(2510 reviews)</p>
+                                </div>
+                                <p class="midText">Class aptent taciti sociosqu</p>
+                                <p class="midText">$2 venenatis metus</p>
+
+                                <div class="bottomText">
+                                    <p class="min">Min. $2</p>
+                                    <li>Upto 25 min</li>
+                                </div>
+                                <p class="bottomText">Accepts cash and online payment</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="orderButton">
+                                <p class="buttonText">Order online   ></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="optionDiv countryLoc">
+            <div class="countryCard">
+                <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                <p class="countryName">India</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png">
+                <p class="countryName">USA</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png">
+                <p class="countryName">Australia</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg">
+                <p class="countryName">Brazil</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png">
+                <p class="countryName">Canada</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png">
+                <p class="countryName">UK</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png">
+                <p class="countryName">Portugal</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png">
+                <p class="countryName">Italy</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg">
+                <p class="countryName">Argentina</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg">
+                <p class="countryName">Qatar</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg">
+                <p class="countryName">New Zealand</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg">
+                <p class="countryName">Switzerland</p>
+            </div>
+            <div class="divTail"></div>
+        </div>
+        <div class = 'optionDiv'>
+            <p class="langOption">English</p>
+            <p class="langOption">Türkçe</p>
+            <p class="langOption">हिंदी</p>
+            <p class="langOption">Português (BR)</p>
+            <p class="langOption">Indonesian</p>
+            <p class="langOption">Português (PT)</p>
+            <p class="langOption">Español</p>
+            <div class="divTail"></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id = "footerContainer">
+            <div id="footerBar">
+                <div id = "footerZomatoText">Zomato</div>
+                <div class="optionContainer">
+                    <div class="fOption">
+                        <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                        <p class="countryName">India</p>
+                    </div>
+                    <div class="fOption">
+                        <img class="countryFlag" src="icons/language-black-18dp.svg">
+                        <p class="countryName">English</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footerLinksContainer">
+                <div class="footerLinksCards">
+                    <div class="linksHead">COMPANY</div>
+                    <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
+                    <div class="links">Blog</div>
+                    <div class="links" onclick="openFile('career.html')">Careers</div>
+                    <div class="links">Report Fraud</div>
+                    <div class="links" onclick="openFile('contact.html')">Contact</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR FOODIES</div>
+                    <div class="links">Code for Conduct</div>
+                    <div class="links">Community</div>
+                    <div class="links">Blogger Help</div>
+                    <div class="links">Developers</div>
+                    <div class="links">Mobile Apps</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR RESTAURANTS</div>
+                    <div class="links">Add Restaurant</div>
+                    <div class="links">Claim your Listing</div>
+                    <div class="links">Business App</div>
+                    <div class="links">Restaurant Widgets</div>
+                    <div class="links">Products for Businesses</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR YOU</div>
+                    <div class="links">Privacy</div>
+                    <div class="links">Terms</div>
+                    <div class="links">Security</div>
+                    <div class="links">Sitemap</div>
+                </div>
+
+                <div class="footerLinksCards">
+                    <div class="linksHead">SOCIAL LINKS</div>
+                    <div id = "socialMediaLinks">
+                        <img class="socialIcon" src = "icons/white_facebook_icon.svg">
+                        <img class="socialIcon" src = "icons/white_instagram_icon.svg">
+                        <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
+                    </div>
+                    <div id = "download">
+                        <img href = "https://bnc.lt/download-z-android"  class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
+                        <img href = "https://bnc.lt/download-zomato-ios " class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    <script src="js/thumbnail.js"></script>
+    <script src="js/openFile.js"></script>
+</body>
+</html>

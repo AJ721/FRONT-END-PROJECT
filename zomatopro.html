@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZomatoPro</title>
+    <link rel = "stylesheet" href = "css/zomatopro.css">
+</head>
+<body>
+        <div id = "topBar">
+            <div id = "topBarContent">
+                <img id = "trendZomatoText" src="https://b.zmtcdn.com/images/zomato_white_logo_new.svg">
+
+                <!-- Search city and cuisine bar -->
+                <div class = "searchCity">
+                    <div id = "city">
+                        <img id="location" src = "icons/room-24px.svg">
+                        <input id = "cityText" type="text" placeholder="New York">
+                        <img id = "dropDownArrow" class = "dArrow" src="icons/arrow_drop_down-24px.svg">
+                    </div>
+                    <p id = "separator">|</p>
+                    <div id = "dish">
+                        <input id = "dishText" type="text" placeholder="Search for restaurant, cuisine or a dish">
+                        <img id = "searchIcon" src="icons/search.svg">
+                    </div>
+                </div>
+
+                <div id = "trendingProfile">
+                    <p class="logSign">LOGIN</p>
+                    <p class="logSign">SIGN UP</p>
+                </div>
+
+                <!-- recommendations box -->
+                <div id = "recommendations">     
+                    <div id = "currentLocaion">
+                        <img id = "currentLocaionIcon" src="icons/\/icons8-location-64.png">
+                        <p id="currentLocationText">Detect current location</p>
+                    </div>
+                    <div id = "popularText" >
+                        <p>Popular Cities</p>
+                    </div>
+                    <div class="recomCities">
+                        <p class="recomCitiesText">Washington DC</p>
+                    </div>
+                    <div class="recomCities">
+                        <p class="recomCitiesText">Chicago</p>
+                    </div>
+                    <div id = "lastRecom" class="recomCities">
+                        <p class="recomCitiesText">San Fransisco</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "mainNavOptions">
+            <div id="navContent">
+                <div id = "navLeftPart">
+                    <img class="navIcon" src="https://b.zmtcdn.com/images/icons/get-the-app-plain.svg" alt="">
+                    <p class="navText">Get the App</p>
+                </div>
+                <div id="navRightPart">
+                    <img class="navIcon" src="https://b.zmtcdn.com/images/icons/order-online.svg">
+                    <p class="navText">Order Food</p>
+                    <img class="navIcon" src="https://b.zmtcdn.com/images/icons/book-a-table.svg">
+                    <p class="navText">Book a Table</p>
+                    <img class="navIcon" src="https://www.zomato.com/images/red/pro_badge.svg">
+                    <p class="navText">Zomato Pro</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="proBanner">
+            <div id="proBannerContent">
+                <img id="proBannerImg" src="https://b.zmtcdn.com/data/pro/514e7ddb5473b29bea0c146eb7cb0eb71596756936.png">
+                <p id="proBannerText">Experience new places in your city every day and enjoy limitless dining privileges!</p>
+            </div>
+        </div>
+        
+        <div id="proBenefits">
+            <div id="deliveryBenefits"></div>
+            <div id="diningBenefits"></div>  
+        </div>
+
+        <div id="membershipBuy">
+            <h2 id="membershipHeading">Select your membership</h2>
+            <div id="membershipCard">
+                <div id= "memberCardHeader">
+                    <p id="memberCardHeaderText">MOST POPULAR</p>
+                </div>
+                <div id="cardUpperHalf">
+                    <p id="upperHalfText">Annual<br>Membership</p>
+                    <p id="upperHalfCost">10$</p>
+                    <p id="upperHalfPlan">For 1 Year</p>
+                </div>
+                <div id="cardLowerHalf">
+                    <p id="lowerHalfText">Use Pro on all days of the week</p>
+                    <div id="lowerHalfButton">
+                        <p id="buttonText">Buy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="duo">
+            <div id="dividerLines"></div>
+
+            <div id="proOffers">    
+                <p id="proOffersHeader">Explore thousands of restaurants across New York and 40 more cities</p>
+                <div id="proCardsContainer">
+                    <div class="proCards">
+                        <img class="proCardsImg" src="https://b.zmtcdn.com/data/pictures/0/36440/00969327085997a123919a3a721563ae_featured_v2.jpeg?output-format=webp">
+                        <p class="proCardsText">Lorem Ipsum</p>
+                        <p class="proCardsSubText">tempor incididunt magna aliqua</p>
+                        <div id="offer"><p id="offerText">zpro - Get 25% off</p></div>
+                    </div>
+                    <div class="proCards">
+                        <img class="proCardsImg" src="https://b.zmtcdn.com/data/pictures/4/18357374/7dc7ba2be4253ad0be7c4c0c0141da12_featured_v2.jpg?output-format=webp">
+                        <p class="proCardsText">Lorem Ipsum</p>
+                        <p class="proCardsSubText">tempor incididunt magna aliqua</p>
+                        <div id="offer"><p id="offerText">zpro - Get 20% off</p></div>
+                    </div>
+                    <div class="proCards">
+                        <img class="proCardsImg" src="https://b.zmtcdn.com/data/pictures/4/17806994/460a8e3456680be69970e4afdf7b5636_featured_v2.jpg?output-format=webp">
+                        <p class="proCardsText">Lorem Ipsum</p>
+                        <p class="proCardsSubText">tempor incididunt magna aliqua</p>
+                        <div id="offer"><p id="offerText">zpro - Get 15% off</p></div>
+                    </div>
+                    <div class="proCards">
+                        <img class="proCardsImg" src="https://b.zmtcdn.com/data/pictures/7/18388687/91fafaf8bac2999a424ff5fd3c1e8dff_featured_v2.jpg?output-format=webp">
+                        <p class="proCardsText">Lorem Ipsum</p>
+                        <p class="proCardsSubText">tempor incididunt magna aliqua</p>
+                        <div id="offer"><p id="offerText">zpro - Get 25% off</p></div>
+                    </div>
+                    <div class="proCards">
+                        <img class="proCardsImg" src="https://b.zmtcdn.com/data/pictures/0/18600990/0fa543e92d47afee0b83f3f36953e97e_featured_v2.jpg?output-format=webp">
+                        <p class="proCardsText">Lorem Ipsum</p>
+                        <p class="proCardsSubText">tempor incididunt magna aliqua</p>
+                        <div id="offer"><p id="offerText">zpro - Get 20% off</p></div>
+                    </div>
+                </div>
+                <div class="redirectButton">
+                    <p class="redirectButtonText">See all Pro Partner Restaurant</p>
+                    <img class="redirectButtonArrow" src="icons/arrow_drop_down-24px.svg">
+                </div>
+            </div>
+
+            <div id="steps">
+                <p id="stepsHeader">Super easy to use! Here’s how</p>
+                <div id="stepsCardsContainer">
+                    <div class="stepsCards">
+                        <img class="stepsCardsImg" src="https://b.zmtcdn.com/images/red/drinks_step_1_3x.png?output-format=webp">
+                        <p class="stepNumber">Step 1</p>
+                        <p class="stepsCardsText">See all Pro Partner Restaurants</p> 
+                    </div>
+                    <div class="stepsCards">
+                        <img class="stepsCardsImg" src="https://b.zmtcdn.com/images/red/food_step_3.png?output-format=webp">
+                        <p class="stepNumber">Step 2</p>
+                        <p class="stepsCardsText">Pay your bill using the Zomato app at the end of your meal</p> 
+                    </div>
+                    <div class="stepsCards">
+                        <img class="stepsCardsImg" src="https://b.zmtcdn.com/images/red/drinks_step_2_3x.png?output-format=webp">
+                        <p class="stepNumber">Step 3</p>
+                        <p class="stepsCardsText">Show your screen to the server and leave!</p> 
+                    </div>
+                </div>
+
+                <div class="redirectButton">
+                    <p class="redirectButtonText">Terms and Conditions</p>
+                    <img class="redirectButtonArrow" src="icons/arrow_drop_down-24px.svg">
+                </div>
+            </div>
+        </div>
+
+    <div id="proFooter">
+            <div id="footerContainer">
+                <div id="proFooterHeader">
+                    <img id="footerZomatoLogo" src="https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg">
+                    <div id="footerLanguage">
+                        <img id = "footerLanguageImg" src="icons/white_language_icon.svg">
+                        <p id="footerLanguageText">English</p>
+                        <img id="dropDown" src="icons/arrow_drop_down-white-18dp.svg">
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div id = "languages">     
+                    <div class="languageOptions">
+                        <p class="languageText">Spanish</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">Italian</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">Korean</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">Greek</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">Cestina</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">Polish</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">French</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">Arabic</p>
+                    </div>
+                    <div class="languageOptions">
+                        <p class="languageText">German</p>
+                    </div>
+                </div>
+
+                <div id="customerSection">
+                    <div class="sectionCards">
+                        <p class="cardsHead">About Zomato</p>
+                        <p class="cardsLinks" onclick="openFile('aboutus.html')">About Us</p>
+                        <p class="cardsLinks">Culture</p>
+                        <p class="cardsLinks">Blog</p>
+                        <p class="cardsLinks">Careers</p>
+                        <p class="cardsLinks">Report Fraud</p>
+                        <p class="cardsLinks">Contact</p>
+                    </div>
+
+                    <div class="sectionCards">
+                        <p class="cardsHead">For Foodies</p>
+                        <p class="cardsLinks">Code of Conduct</p>
+                        <p class="cardsLinks">Community</p>
+                        <p class="cardsLinks">Verified Users</p>
+                        <p class="cardsLinks">Blogger Help</p>
+                        <p class="cardsLinks">Developers</p>
+                        <p class="cardsLinks">Mobile Apps</p>
+                    </div>
+
+                    <div class="sectionCards">
+                        <p class="cardsHead">For Restaurants</p>
+                        <p class="cardsLinks">Add a Restaurant</p>
+                        <p class="cardsLinks">Claim your Listing</p>
+                        <p class="cardsLinks">Business App</p>
+                        <p class="cardsLinks">Business Owner Guidelines</p>
+                        <p class="cardsLinks">Business Blog</p>
+                        <p class="cardsLinks">Restaurant Widgets</p>
+                        <p class="cardsLinks">Products for Businesses</p>
+                    </div>
+
+                    <div class="sectionCards">
+                        <p></p><br><br>
+                        <p class="cardsLinks">Advertise</p>
+                        <p class="cardsLinks">Order</p>
+                        <p class="cardsLinks">Book</p>
+                        <p class="cardsLinks">Trace</p>
+                        <p class="cardsLinks">Hyperpure</p>
+                    </div>
+                </div>
+                <div id="countrySection">
+
+                    <div class="sectionCards">
+                        <p class="cardsHead">Country</p>
+                        <p class="cardsLinks">India</p>
+                        <p class="cardsLinks">Australia</p>
+                        <p class="cardsLinks">Brasil</p>
+                        <p class="cardsLinks">Canada</p>
+                        <p class="cardsLinks">Chile</p>
+                    </div>
+
+                    <div class="sectionCards">
+                        <p></p><br><br>
+                        <p class="cardsLinks">USA</p>
+                        <p class="cardsLinks">Czech Republic</p>
+                        <p class="cardsLinks">Indonesia</p>
+                        <p class="cardsLinks">Ireland</p>
+                        <p class="cardsLinks">Italy</p>
+                    </div>
+
+                    
+                    <div class="sectionCards">
+                        <p></p><br><br> 
+                        <p class="cardsLinks">Lebanon</p>
+                        <p class="cardsLinks">Malaysia</p>
+                        <p class="cardsLinks">New Zealand</p>
+                        <p class="cardsLinks">Philippines</p>
+                        <p class="cardsLinks">Poland</p>
+                    </div>
+
+                    <div class="sectionCards">
+                        <p></p><br><br>
+                        <p class="cardsLinks">Portugal</p>
+                        <p class="cardsLinks">Qatar</p>
+                        <p class="cardsLinks">Singapore</p>
+                        <p class="cardsLinks">Slovakia</p>
+                        <p class="cardsLinks">South Africa</p>
+                    </div>
+
+                    <div class="sectionCards">
+                        <p></p><br><br>
+                        <p class="cardsLinks">Sri Lanka</p>
+                        <p class="cardsLinks">Turkey</p>
+                        <p class="cardsLinks">UAE</p>
+                        <p class="cardsLinks">United Kingdom</p>
+                        <p class="cardsLinks">South Africa</p>
+                    </div>
+                </div>
+                <div id="documentationsSection">
+                    <div id="otherLinksContainers">
+                        <h2 class="otherLinks">Privacy</h2>
+                        <h2 class="otherLinks">Terms</h2>
+                        <h2 class="otherLinks">API Policy</h2>
+                        <h2 class="otherLinks">CSR</h2>
+                        <h2 class="otherLinks">Security</h2>
+                        <h2 class="otherLinks">Sitemap</h2>
+                    </div>
+                    <div id = "socialMediaLinks">
+                        <img class="socialIcon" src = "icons/white_facebook_icon.svg">
+                        <img class="socialIcon" src = "icons/white_instagram_icon.svg">
+                        <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
+                    </div>
+                </div>
+
+                <p id="agreementSentence">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. © 2008-2020 - Zomato™ Media Pvt Ltd. All rights reserved.</p>
+            </div>
+    </div>
+
+
+    <script src="js/zomatoPro.js"></script>
+    <script src="js/openFile.js"></script>
+</body>
+</html>
+
+
+
+

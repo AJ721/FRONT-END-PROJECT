@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/contact.css">
+</head>
+<body>
+    <div id="imgContainer">
+        <img src="https://b.zmtcdn.com/webFrontend/8015dbe54fd3659cc0366c1cc77f664c1601890512.jpeg?output-format=webp">
+    </div>
+    <div id="subBody">
+        <div id = "topBarContent">
+            <img id = "trendZomatoText" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png">
+            <!-- Search city and cuisine bar -->
+            <div class = "searchCity">
+                <div id = "city">
+                    <img id="location" src = "icons/room-24px.svg">
+                    <input id = "cityText" type="text" placeholder="New York">
+                    <img id = "dropDownArrow" class = "dArrow" src="icons/arrow_drop_down-24px.svg">
+                </div>
+                <p id = "separator">|</p>
+                <div id = "dish">
+                    <input id = "dishText" type="text" placeholder="Search for restaurant, cuisine or a dish">
+                    <img id = "searchIcon" src="icons/search.svg">
+                </div>
+            </div>
+            <div id = "trendingProfile">
+                <p class="logSign">LOGIN</p>
+                <p class="logSign">SIGN UP</p>
+            </div>
+            <!-- recommendations box -->
+            <div id = "recommendations">     
+                <div id = "currentLocaion">
+                    <img id = "currentLocaionIcon" src="icons/\/icons8-location-64.png">
+                    <p id="currentLocationText">Detect current location</p>
+                </div>
+                <div id = "popularText" >
+                    <p>Popular Cities</p>
+                </div>
+                <div class="recomCities">
+                    <p class="recomCitiesText">Washington DC</p>
+                </div>
+                <div class="recomCities">
+                    <p class="recomCitiesText">Chicago</p>
+                </div>
+                <div id = "lastRecom" class="recomCities">
+                    <p class="recomCitiesText">San Fransisco</p>
+                </div>
+            </div>
+        </div>  
+        <div id="headingText">
+            <h1>We would love to hear from you!</h1>
+        </div>
+
+        <div class="grievanceForm">
+            <div class="form">
+                <div class="textFields" >
+                    <div class="textInput">
+                        <input class="text" type="text" required>
+                        <div class="placeholder">
+                            <p class="placeholderText">How can we help you?</p>
+                            <p id="asterisk1">*</p>
+                        </div>
+                    </div>
+                    <img src="icons/arrow_drop_down-24px.svg">
+                </div>
+                <div class="textFields" >
+                    <div class="textInput">
+                        <input class="text" type="text" required onfocus="textChanges(1, true)" onblur="textChanges(1, false)">
+                        <div class="placeholder">
+                            <p class="placeholderText">Full Name?</p>
+                            <p id="asterisk2">*</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="textFields" >
+                    <div class="textInput">
+                        <input class="text" type="text" onfocus="textChanges(2, true)" onblur="textChanges(2, false)" required>
+                        <div class="placeholder">
+                            <p class="placeholderText">Email Address</p>
+                            <p id="asterisk3">*</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="textFields" >
+                    <div class="textInput">
+                    <input class="text" type="text" onfocus="textChanges(3, true)" onblur="textChanges(3, false)">
+                    <div class="placeholder">
+                        <p class="placeholderText">Mobile Number(Optional)</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="textFields textArea">
+                    <div class="textInput">
+                        <input class="text" type="text" onfocus="textChanges(4, true)" onblur="textChanges(4, false)">
+                        <div class="placeholder">
+                            <p class="placeholderText">Type Here</p>
+                            <p id="asterisk4">*</p>
+                        </div>  
+                    </div>
+                </div>
+                <div id="submitButton">Submit feedback</div>
+                
+            </div>
+
+            <div class="grievanceCardContainer">
+                <div class="gCard">
+                    <h1>Report a Safety Emergency</h1>
+                    <p>We are committed to the safety of everyone using Zomato.</p>
+                </div>                
+                <div class="gCard">
+                    <h1>Issue with your live order?</h1>
+                    <p>Click on the 'Support' or 'Online ordering help' section in your app to connect to our customer support team.</p>
+                </div>                
+                <div class="gCard">
+                    <h1>Issue with Zomato Pro?</h1>
+                    <p>Click on the 'Pro help' section in your app to connect to our Pro support team.</p>
+                </div>                
+
+            </div>
+        </div>
+
+        <h1 class="divHeadings">For business enquiries, please call your nearest Zomato office</h1>
+        <div class="cDetailsContainer">
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/au.png?output-format=webp">
+                <div class="cDRight">
+                    <p class="countryName">Australia</p>
+                    <p class="telNumber">+61 450 266 295</p>
+                </div>
+            </div>
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/id.png?output-format=webp">
+                <div class="cDRight">
+                    <p class="countryName">Indonesia</p>
+                    <p class="telNumber">+62 8121 8582 738</p>
+                </div>
+            </div>
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/ph.png?output-format=webp">
+                <div class="cDRight">
+                    <p class="countryName">Philippines</p>
+                    <p class="telNumber">+63 272188267</p>
+                </div>
+            </div>
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/nz.png?output-format=webp">
+                <div class="cDRight">
+                    <p class="countryName">New Zealand</p>
+                    <p class="telNumber">+64 9 373 2947</p>
+                </div>
+            </div>
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/pt.png?output-format=webp">
+                <div class="cDRight">
+                    <p class="countryName">Portugal</p>
+                    <p class="telNumber">+351 211 519 969</p>
+                </div>
+            </div>
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/lb.png?output-format=webp">
+                <div class="cDRight">
+                    <p class="countryName">Lebanon</p>
+                    <p class="telNumber">+961 81 416976</p>
+                    <p class="telNumber">+961 81 416977</p>
+                    
+                </div>
+            </div>
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/ae.png?output-format=webp">
+                <div class="cDRight">
+                    <p class="countryName">UAE</p>
+                    <p class="telNumber">+971 4 351 9170 (Dubai)</p>
+                    <p class="telNumber">+971 2 671 3728 (Abu Dhabi)</p>
+                    
+                </div>
+            </div>
+            <div class="cDCard">
+                <img src="https://b.zmtcdn.com/images/flags_z10/tr.png?output-format=webp   ">
+                <div class="cDRight">
+                    <p class="countryName">Turkey</p>
+                    <p class="telNumber">+90554 147 6198</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="optionDiv countryLoc">
+            <div class="countryCard">
+                <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                <p class="countryName">India</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png">
+                <p class="countryName">USA</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png">
+                <p class="countryName">Australia</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg">
+                <p class="countryName">Brazil</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png">
+                <p class="countryName">Canada</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png">
+                <p class="countryName">UK</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png">
+                <p class="countryName">Portugal</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png">
+                <p class="countryName">Italy</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg">
+                <p class="countryName">Argentina</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg">
+                <p class="countryName">Qatar</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg">
+                <p class="countryName">New Zealand</p>
+            </div>
+            <div class="countryCard">
+                <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg">
+                <p class="countryName">Switzerland</p>
+            </div>
+            <div class="divTail"></div>
+        </div>
+        <div class = 'optionDiv'>
+            <p class="langOption">English</p>
+            <p class="langOption">Türkçe</p>
+            <p class="langOption">हिंदी</p>
+            <p class="langOption">Português (BR)</p>
+            <p class="langOption">Indonesian</p>
+            <p class="langOption">Português (PT)</p>
+            <p class="langOption">Español</p>
+            <div class="divTail"></div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div id = "footerContainer">
+            <div id="footerBar">
+                <div id = "footerZomatoText">Zomato</div>
+                <div class="optionContainer">
+                    <div class="fOption">
+                        <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                        <p class="countryName">India</p>
+                    </div>
+                    <div class="fOption">
+                        <img class="countryFlag" src="icons/language-black-18dp.svg">
+                        <p class="countryName">English</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footerLinksContainer">
+                <div class="footerLinksCards">
+                    <div class="linksHead">COMPANY</div>
+                    <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
+                    <div class="links">Blog</div>
+                    <div class="links" onclick="openFile('career.html')">Careers</div>
+                    <div class="links">Report Fraud</div>
+                    <div class="links">Contact</div>
+                </div>
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR FOODIES</div>
+                    <div class="links">Code for Conduct</div>
+                    <div class="links">Community</div>
+                    <div class="links">Blogger Help</div>
+                    <div class="links">Developers</div>
+                    <div class="links">Mobile Apps</div>
+                </div>
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR RESTAURANTS</div>
+                    <div class="links">Add Restaurant</div>
+                    <div class="links">Claim your Listing</div>
+                    <div class="links">Business App</div>
+                    <div class="links">Restaurant Widgets</div>
+                    <div class="links">Products for Businesses</div>
+                </div>
+                <div class="footerLinksCards">
+                    <div class="linksHead">FOR YOU</div>
+                    <div class="links">Privacy</div>
+                    <div class="links">Terms</div>
+                    <div class="links">Security</div>
+                    <div class="links">Sitemap</div>
+                </div>
+                <div class="footerLinksCards">
+                    <div class="linksHead">SOCIAL LINKS</div>
+                    <div id = "socialMediaLinks">
+                        <img class="socialIcon" src = "icons/white_facebook_icon.svg">
+                        <img class="socialIcon" src = "icons/white_instagram_icon.svg">
+                        <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
+                    </div>
+                    <div id = "download">
+                        <img href = "https://bnc.lt/download-z-android"  class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
+                        <img href = "https://bnc.lt/download-zomato-ios" class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/contact.js"></script>
+    <script src="js/openFile.js"></script>
+    
+</body>
+</html>

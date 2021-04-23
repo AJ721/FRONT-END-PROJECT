@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel = "stylesheet" href = "css/site.css">
+</head>
+<body>
+    <div id = "homePage">
+            <div id = "imgContainer">
+                <img id = "burger" src="img/zomato.jpg" alt="Zomato">
+            </div>      
+            <div class="nav" style="margin: 0 auto;">
+                <div id = "homeTopNav">
+                    <p class="appLink">Get the App</p>
+                    <p class="log">Sign Up</p>
+                    <p class="log">Log in</p>
+                </div>
+                
+                <div id = "head">
+                    <img class = "title" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png">
+                    <h3 class = "title1">Never have a bad meal</h3>
+                </div> 
+
+                <!--Search Bar to search city and food, restaurant-->
+                <div class = "searchCity">
+                    <div id = "city">
+                        <img id="location" src = "icons/room-24px.svg">
+                        <input id = "cityText" type="text" placeholder="New York">
+                        <img id = "dropDownArrow" class = "dArrow" src="icons/arrow_drop_down-24px.svg">
+                    </div>
+                    <p id = "separator">|</p>
+                    <div id = "dish">
+                        <input id = "dishText" type="text" placeholder="Search for restaurant, cuisine or a dish">
+                        <img id = "searchIcon" src="icons/search.svg">
+                    </div>
+                </div>
+
+                <!--Recommended locations-->
+                <div id = "recommendations">     
+                    <div id = "currentLocaion">
+                        <img id = "currentLocaionIcon" src="icons/location.png">
+                        <p id="currentLocationText">Detect current location</p>
+                    </div>
+                    <div id = "popularText" >
+                        <p>Popular Cities</p>
+                    </div>
+                    <div class="recomCities">
+                        <p class="recomCitiesText">Washington DC</p>
+                    </div>
+                    <div class="recomCities">
+                        <p class="recomCitiesText">Chicago</p>
+                    </div>
+                    <div id = "lastRecom" class="recomCities">
+                        <p class="recomCitiesText">San Fransisco</p>
+                    </div>
+                </div>
+
+                <!--Zomato category cards-->
+                <div id = "cardContainer">
+                    <div class = "cards" onclick="openFile('thumbnails.html')">
+                        <img class = "imgClass" src="img/cards/onlineFood.webp">
+                        <div class="cardText"> Order food online</div>
+                    </div>
+                    <div class = "cards" onclick="openFile('thumbnails.html')">
+                        <img class = "imgClass" src="img/cards/outForMeal.webp">
+                        <div class="cardText"> Go out for a meal</div>
+                    </div>
+                    <div class = "cards" onclick="openFile('thumbnails.html')">
+                        <img class = "imgClass" src="img/cards/clubs.webp">
+                        <div class="cardText"> Night life and clubs</div>
+                    </div>
+                    <div class = "cards" onclick="openFile('zomatopro.html')">
+                        <img class = "imgClass" src="img/cards/zomatoPro.webp">
+                        <div class="cardText"> Zomato Pro</div>
+                    </div>
+                </div>
+
+                <!--Collections of that particular city-->
+                <div id = "collections">
+                    <p id = "collectionsText">Collections</p> 
+                    <p id = "subCollectionsText">Explore curated lists of top restaurants, cafes, pubs, and bars in New York, based on trends</p>
+                    <div id = "collectionsCardContainer">
+                        <div class = "collectionsCards" onclick="openFile('trending.html')">
+                            <img class = "collectionsImgClass" src="https://myburbank.com/wp-content/uploads/2017/11/BA_303_Offers_Indulge_Ribs.jpg">
+                            <div class="collectionsCardText">Trending this week<br>12 places</div>
+                            <img class = "rightArrowIcon" src="icons/arrow_drop_down-white-18dp.svg">
+                        </div>
+                        <div class = "collectionsCards" onclick="openFile('bestofcity.html')">
+                            <img class = "collectionsImgClass" src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production.gtsstatic.net%2Fresources%2Fsiteresources%2Fmy%20folder%2Fny-statue%20copy.jpg&option=N&w=1200&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production.gtsstatic.net%2Fresources%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_400x300.jpg">
+                            <div class="collectionsCardText">Best of New York <br> 20 places</div>
+                            <img class = "rightArrowIcon" src="icons/arrow_drop_down-white-18dp.svg">
+                        </div>
+                        <div class = "collectionsCards" onclick="openFile('sportscreening.html')">
+                            <img class = "collectionsImgClass" src="https://cdn.vox-cdn.com/thumbor/YrJ7ZO410Qr8gwkpm5eFplsm4lk=/0x0:1200x800/1200x800/filters:focal(504x304:696x496)/cdn.vox-cdn.com/uploads/chorus_image/image/64576764/1803002.0.jpg">
+                            <div class="collectionsCardText">Live sports screening<br> 10 places</div>
+                            <img class = "rightArrowIcon" src="icons/arrow_drop_down-white-18dp.svg">
+                        </div>
+                        <div class = "collectionsCards" onclick="openFile('microbreweries.html')">
+                            <img class = "collectionsImgClass" src="https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/GettyImages-1044350714.jpg">
+                            <div class="collectionsCardText">Microbreweries <br> 5 places</div>
+                            <img class = "rightArrowIcon" src="icons/arrow_drop_down-white-18dp.svg">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id = "popularaties">
+                    <p id = "popularHeading">Popular localities in and around New York</p> 
+                        <div id = "placesCardContainer">
+                            <div class="placeCards">
+                                <p class = "placeName">New York</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">Buffalo</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">Rochester</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">Yonkers</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">Syracuse</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">	Albany</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">New Rochelle</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">Cheektowaga</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                            <div class="placeCards">
+                                <p class = "placeName">Mount Vernon</p>
+                                <img class = "placeArrow" src="icons/expand_more-black-18dp.svg">
+                            </div>
+                        </div>
+                </div>
+
+                <div id="userLink">
+                    <div id="mobImgContainer">
+                        <img id="mobImg" src="https://b.zmtcdn.com/data/pro/5722d9e687511d79616bcab92470734e1596187147.png">
+                        <div id="blank"></div>
+                    </div>
+                    <div id="getDetails">
+                        <div id="appHead">
+                            <h1 id="detailsHead">Get the Zomato App</h1>
+                            <p id="subSentence">We will send you a link, open it on your phone to download the app</p>
+                        </div>
+                        <div id="radioGroup">
+
+                            <label class="radioText"><input class="radio" id="email" type="radio" name="radio" checked="true"/>Email</label>
+                            <label class="radioText"><input class="radio" id="phone" type="radio" name="radio"/>Phone</label>
+
+                        </div>
+
+                        <div id="emailNumberInput" name="form">
+                            <div id="form1">
+                                <label id="eNInputText">Email</label> 
+                                <input id="eNInput" type="text" name="text">
+                            </div>
+
+
+                            <div id="form2">
+                                <div id="phoneNumber">
+                                    <div id="cCode">
+                                        <p id="cCodeText">+1</p>
+                                    </div>
+                                    <input id="pNumInput" type="text" name="number">
+                                </div>
+                            </div>
+                            <div id="eNButton"><p>Share App Link</p></div>
+                        </div>
+
+                        <p id="invalid1">Please enter your email id</p>
+                        <p id="invalid2">Please enter your mobile number</p>
+
+                        <p id="dFromText">Download app from</p>
+                        <div id="dFromOptions">
+                            <img href = "https://bnc.lt/download-z-android"  class = "dFromIcons" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
+                            <img href = "https://bnc.lt/download-zomato-ios " class = "dFromIcons" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="exploreNear">
+                    <h1 id="exploreHead">Explore other options for you here</h1>
+                    <div class="exploreCuisines">
+                        <h1 class="cuisinesHead">Popular cuisines near me</h1>
+                        <div class="exploreLinkContainer">
+                            <a class="exploreLink" id="leftMost">Bakery food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Beverages food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Burger food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Cafe near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Chinese food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Continental food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Desserts food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Ice Cream food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Italian food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Juices food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Pizza food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Rolls food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Sandwich food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Seafood food near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Street Food food near me</a>
+                            <span class="divDots"></span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="exploreCuisines">
+                        <h1 class="cuisinesHead">Popular restaurants near me</h1>
+                        <div class="exploreLinkContainer">
+                            <a class="exploreLink" id="leftMost">Bakeries near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Bars near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Beverage Shops near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Cafés near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Casual Dining near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Clubs near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Confectioneries near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Dessert Shops near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Fine Dining near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Food Courts near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Food Trucks near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Kiosks near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Lounges near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Meat Shops near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Microbreweries near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Pubs near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Quick Bites near me</a>
+                            <span class="divDots"></span>
+                            <a class="exploreLink">Sweets Shops near me</a>
+                            <span class="divDots"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div id="restCity">
+                    <h1 class="cuisinesHead">Top Restaurant Chains</h1>
+                    <div id="chainLinkContainer">
+                        <a class="chainLink">Burger King</a>
+                        <a class="chainLink">Domino's</a>
+                        <a class="chainLink">Dunkin' Donuts</a>
+                        <a class="chainLink">KFC</a>
+                        <a class="chainLink">Krispy Kreme</a>
+                        <a class="chainLink">McDonald's</a>
+                        <a class="chainLink">Pizza Hut</a>
+                    </div>
+                </div>
+
+                <div id="restCity">
+                    <h1 class="cuisinesHead">Cities We Deliver To</h1>
+                    <div id="chainLinkContainer">
+                        <a class="chainLink">New York</a>
+                        <a class="chainLink">Los Angeles</a>
+                        <a class="chainLink">Chicago</a>
+                        <a class="chainLink">Houston</a>
+                        <a class="chainLink">Phoenix</a>
+                        <a class="chainLink">Philadelphia</a>
+                        <a class="chainLink">San Antonio</a>
+                        <a class="chainLink">San Diego</a>
+                        <a class="chainLink">Dallas</a>
+                        <a class="chainLink">San Jose</a>
+                        <a class="chainLink">Austin</a>
+                        <a class="chainLink">Indianapolis</a>
+                        <a class="chainLink">Boston</a>
+                        <a class="chainLink">San Francisco</a>
+                        <a class="chainLink">Washington</a>
+                        <a class="chainLink">Oklahoma City</a>
+                        <a class="chainLink">Las Vegas</a>
+                        <a class="chainLink">Nashville</a>
+                        <a class="chainLink">Atlanta</a>
+                        <a class="chainLink">Kansas City</a>
+                        <a class="chainLink">Miami</a>
+                        <a class="chainLink">Oakland</a>
+                        <a class="chainLink">New Orleans</a>
+                        <a class="chainLink">St. Louis</a>
+                        <a class="chainLink">Lincoln</a>
+                        <a class="chainLink">St. Petersburg</a>
+                        <a class="chainLink">Buffalo</a>
+                        <a class="chainLink">Stamford</a>
+                        <a class="chainLink">Columbia</a>
+                        <a class="chainLink">Berkeley</a>
+                        <a class="chainLink">El Monte</a>
+                        <a class="chainLink">Independence</a>
+                        <a class="chainLink">Waterbury</a>
+                        <a class="chainLink">Lakewood</a>
+                        <a class="chainLink">Tyler</a>
+                        <a class="chainLink">Chico</a>
+                        <a class="chainLink">Carmel</a>
+                        <a class="chainLink">Vista</a>
+                        <a class="chainLink">Charlotte</a>
+                        <a class="chainLink">El Paso</a>
+                        <a class="chainLink">Albuquerque</a>
+                        <a class="chainLink">Mesa</a>
+
+                    </div>
+                </div>
+
+                <div class="optionDiv countryLoc">
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                        <p class="countryName">India</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png">
+                        <p class="countryName">USA</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png">
+                        <p class="countryName">Australia</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg">
+                        <p class="countryName">Brazil</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png">
+                        <p class="countryName">Canada</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png">
+                        <p class="countryName">UK</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png">
+                        <p class="countryName">Portugal</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png">
+                        <p class="countryName">Italy</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg">
+                        <p class="countryName">Argentina</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg">
+                        <p class="countryName">Qatar</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg">
+                        <p class="countryName">New Zealand</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg">
+                        <p class="countryName">Switzerland</p>
+                    </div>
+                    <div class="divTail"></div>
+                </div>
+                <div class = 'optionDiv'>
+                    <p class="langOption">English</p>
+                    <p class="langOption">Türkçe</p>
+                    <p class="langOption">हिंदी</p>
+                    <p class="langOption">Português (BR)</p>
+                    <p class="langOption">Indonesian</p>
+                    <p class="langOption">Português (PT)</p>
+                    <p class="langOption">Español</p>
+                    <div class="divTail"></div>
+                </div>
+            </div>
+    </div>
+    <div id="footer">
+                <div id = "footerContainer">
+                    <div id="footerBar">
+                        <div id = "footerZomatoText">Zomato</div>
+
+                        <div class="optionContainer">
+                            <div class="fOption">
+                                <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                                <p class="countryName">India</p>
+                            </div>
+                            <div class="fOption">
+                                <img class="countryFlag" src="icons/language-black-18dp.svg">
+                                <p class="countryName">English</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="footerLinksContainer">
+                        <div class="footerLinksCards">
+                            <div class="linksHead">COMPANY</div>
+                            <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
+                            <div class="links">Blog</div>
+                            <div class="links" onclick="openFile('career.html')">Careers</div>
+                            <div class="links">Report Fraud</div>
+                            <div class="links" onclick="openFile('contact.html')">Contact</div>
+                        </div>
+        
+                        <div class="footerLinksCards">
+                            <div class="linksHead">FOR FOODIES</div>
+                            <div class="links">Code for Conduct</div>
+                            <div class="links">Community</div>
+                            <div class="links">Blogger Help</div>
+                            <div class="links">Developers</div>
+                            <div class="links">Mobile Apps</div>
+                        </div>
+        
+                        <div class="footerLinksCards">
+                            <div class="linksHead">FOR RESTAURANTS</div>
+                            <div class="links">Add Restaurant</div>
+                            <div class="links">Claim your Listing</div>
+                            <div class="links">Business App</div>
+                            <div class="links">Restaurant Widgets</div>
+                            <div class="links">Products for Businesses</div>
+                        </div>
+        
+                        <div class="footerLinksCards">
+                            <div class="linksHead">FOR YOU</div>
+                            <div class="links">Privacy</div>
+                            <div class="links">Terms</div>
+                            <div class="links">Security</div>
+                            <div class="links">Sitemap</div>
+                        </div>
+        
+                        <div class="footerLinksCards">
+                            <div class="linksHead">SOCIAL LINKS</div>
+                            <div id = "socialMediaLinks">
+                                <img class="socialIcon" src = "icons/white_facebook_icon.svg">
+                                <img class="socialIcon" src = "icons/white_instagram_icon.svg">
+                                <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
+                            </div>
+                            <div id = "download">
+                                <img href = "https://bnc.lt/download-z-android"  class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
+                                <img href = "https://bnc.lt/download-zomato-ios " class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <script src = "js/site.js"></script>
+    <script src="js/openFile.js"></script>
+    
+</body>
+</html>
