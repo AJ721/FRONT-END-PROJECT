@@ -1,0 +1,587 @@
+body, html{
+    margin: 0px;
+    height: auto;
+    text-align: center;
+}
+
+#topBar{
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid rgba(150, 148, 148, 0.158);
+    background: rgba(226, 0, 0, 0.89);
+    margin-top: 0px;
+    position: relative;
+    display: inline-block;
+}
+    #topBarContent{
+        width: 1100px;
+        height: 100%;
+        font-family: sans-serif;
+        display: inline-block;
+    }
+    #trendZomatoText{
+        width: 120px;
+        height: 30px; 
+        float: left;
+        margin-top: 15px;
+    }
+
+                                                                    /*Search city, cuisine and restaurant*/
+.searchCity{
+    width: 600px;
+    height: 35px;
+    border-radius: 10px;
+    background: white;
+    color: rgba(0, 0, 0, 0.233);
+    margin: 13px 0 0 180px;
+    position: absolute;
+    border: 0.5px solid rgba(43, 42, 42, 0.082);
+    box-shadow: 0 4px 6px 0 rgba(36, 36, 36, 0.048), 0 6px 10px 0 rgba(36, 36, 36, 0.048);
+}
+    #city{
+        float: left;
+        width: 34%;
+        border-radius: 10px;
+        position: absolute; 
+        display: flex;
+    }
+    #location{
+        width: 20px;
+        height: 20px;
+        float: left;
+        position: absolute;
+        margin: 8px 0 0 8px;
+    }
+    #cityText{
+        width: 100px;
+        padding: 5px;
+        margin: 5px 0 0 35px;
+        border: 0px;
+        outline: 0px; 
+        font-size: 13px;
+    }
+    #dropDownArrow{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0px;
+        margin: 5px 10px 0 150px;
+    }
+    .dArrow{
+        transform: rotate(0deg);
+        transition: transform 0.2s linear;
+    }
+    .dArrow.open{
+        transform: rotate(180deg);
+        transition: transform 0.2s linear;
+    }
+    #separator{
+        float: right;
+        position:absolute;
+        color: rgb(223, 223, 223);
+        font-weight: bolder;
+        margin: 10px 0 0 220px;
+    }
+    #dish{
+        position: absolute;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        right: 100px;
+        padding: 3px;
+        display: inline-block;
+    }
+    #dishText{
+        float: left;
+        width: 80%;
+        margin: 6px 0 0 50px;
+        border: 0px white;
+        outline: 0px; 
+        font-size: 15px;
+    }
+    #searchIcon{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin: 6px 0 0 75px;
+        float: right;
+    }
+                                                                    /*Reccomendations box*/
+#recommendations{
+    width: 350px;
+    height: auto;
+    margin: 20px 0 0 195px;
+    background: white;
+    border-radius: 10px;
+    color: rgb(78, 78, 78);
+    border: 1px solid rgb(156, 156, 156);
+    position: absolute;
+    visibility: hidden;
+}
+        #currentLocaion{
+            height: 68px;
+            border-radius: 10px 10px 0 0;
+        }
+        #currentLocaionIcon{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            margin: 20px 0 0 10px;
+        }
+        #currentLocationText{
+            position: absolute;
+            margin: 25px 0 0 50px;
+        }
+        #popularText{
+            height: 40px;
+            padding-left: 20px;
+        }
+        .recomCities{
+            width: auto;
+            height: 57px;
+            border-top: 1px solid rgba(223, 221, 221, 0.356);
+        }  
+        .recomCities:hover{
+            background: rgb(235, 235, 235);
+            transition: 0.6s ease-in-out;
+        } 
+        .recomCitiesText{
+            margin: 20px 0 0 20px;
+        }
+        #lastRecom{
+            border-radius: 0 0 10px 10px;
+        }
+    
+                                                                        /*Trending banner*/
+#trendingProfile{
+    width: 150px;
+    height: 40px;
+    margin: 10px 90px 0 0;
+    color: white;
+    float: right;
+    display: flex;
+}
+    .logSign{
+        margin-left: 15px;
+    }
+
+#mainNavOptions{
+    width: 100%;
+    height: 40px;
+    background: white;
+}
+    #navContent{
+        width: 1065px;
+        height: auto;
+        display: inline-flex;
+    }
+    #navLeftPart{
+        display: flex;
+        float: left;
+        padding-left: 0px;
+    }
+    #navRightPart{
+        display: flex;
+        float: right;
+        margin-left: 500px;
+    }
+    .navIcon{
+        width: 32px;
+        height: 32px;
+        margin: 2px 8px 0 10px;
+    }
+    .navText{
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-right: 10px;
+        margin: 10px 10px 0 0;
+    }
+
+#proBanner{
+    width: 100%;
+    height: 300px;
+    background: url(https://b.zmtcdn.com/data/pro/d8f65b73ded67bfe79e608b4315471ed1596373067.png) top;
+    background-position: 50%;
+    background-size: cover;
+    display: inline-block;
+}
+    #proBannerContent{
+        width: 800px;
+        height: 330px;
+        text-align: center;
+        display: inline-block;
+    }
+    #proBannerImg{
+        width: 220px;
+        height: 120px;
+        margin-top: 80px;
+    }
+    #proBannerText{
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+#proBenefits{
+    width: 100%;
+    display: inline-flex;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.377);
+}
+    #deliveryBenefits{
+        float: left;
+        width: 50%;
+        height: 400px;
+        background: url(https://b.zmtcdn.com/data/red_images/4df2a4cd2b92ca07c8e5c2842998fde3.png);
+        background-size: cover;        
+    }
+    #diningBenefits{
+        float: right;
+        width: 50%;
+        height: 400px;
+        background: url(https://b.zmtcdn.com/data/red_images/4e40e7a76166c400fa044a9ba01cfa15.png);
+        background-size: cover;
+    }
+
+#membershipBuy{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+    #membershipHeading{
+        font-family: sans-serif;
+        color: rgba(0, 0, 0, 0.637);
+    }
+    #membershipCard{
+        width: 250px;
+        height: 300px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px 10px rgba(146, 146, 146, 0.048), 0 6px 20px 10px  rgba(146, 146, 146, 0.048);
+        display: inline-table;
+    }
+    #memberCardHeader{
+        width: 250px;
+        height: 30px;
+        background: rgb(173, 0, 66);
+        border-radius: 10px 10px 0 0;
+        display: inline-block;
+    }
+    #memberCardHeaderText{
+        font-family: sans-serif;
+        font-size: 10px;
+        color: white;
+        margin-top: 10px;
+    }
+    #cardUpperHalf, #cardLowerHalf{
+        width: 250px;
+        height: 135px;
+        padding-top: 10px;
+    }
+    #cardUpperHalf{
+        background: white;
+        display: inline-block;
+    }
+    #upperHalfText{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 8px 0 0 0;
+        color: rgba(0, 0, 0, 0.795);
+    }
+    #upperHalfCost{
+        font-family: sans-serif;
+        font-size: 20px;
+        color: rgb(247, 26, 63);
+        margin-bottom: 0px;
+    }
+    #upperHalfPlan{
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.486);
+        margin-top: 0px;
+    }   
+    #lowerHalfText{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    #lowerHalfButton{
+        width: 150px;
+        height: 40px;
+        background: rgba(255, 192, 203, 0.726);
+        color: rgb(163, 0, 27);
+        border-radius: 15px;
+        display: inline-block; 
+        font-size: 15px;
+    }  
+    #buttonText{
+        margin-top: 10px;
+    }
+    #lowerHalfButton:hover{
+        background: rgb(88, 1, 15);
+        color: white;
+    }
+
+#dividerLines{
+    width: 800px;
+    height: 50px;   
+    margin: 30px 0 0 0;
+    border-top: 1px solid rgba(95, 94, 94, 0.151);
+    border-bottom: 1px solid rgba(95, 94, 94, 0.151);
+    display: inline-block;
+}   
+
+#duo{
+    width: 1100px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+}
+
+#proOffers{
+    margin-top: 50px;
+}
+    #proOffersHeader{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #proCardsContainer{
+        width: 100%;
+        height: 300px;
+        display: inline-flex;
+    }
+    .proCards{
+        width: 190px;
+        height: 230px;
+        border-radius: 10px 10px 0 0;
+        margin: 0 15px 0 15px;
+    }
+    .proCardsImg{
+        width: 190px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .proCardsText, .proCardsSubText{
+        font-family: sans-serif;
+        color: rgb(68, 68, 68);
+        margin-left: 0px;
+    }
+    .proCardsText{
+        font-size: 14px;
+    }
+    .proCardsSubText{
+        font-size: 12px;
+    }
+    #offer{
+        width: 150px;
+        height: 30px;
+        background: rgb(255, 0, 140);
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin: 20px 0 0 20px;
+    }
+    #offerText{
+        margin-top: 5px;
+    }
+    
+    .redirectButton{
+        display: inline-block;
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid rgba(158, 158, 158, 0.336);
+        box-shadow: 0 4px 10px 10px rgba(146, 146, 146, 0.048), 0 6px 20px 10px  rgba(146, 146, 146, 0.048);
+        margin: 30px 0 50px 0;
+    }
+    .redirectButtonText{
+        float: left;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        margin: 20px 0 0 10px;
+    }
+    .redirectButtonArrow{
+        width: 30px;
+        height: 30px;
+        float: right;
+        transform: rotate(-90deg);
+        margin: 13px 8px 0 0;
+    }
+
+#steps{
+    width: 1100px;
+    height: auto;
+    margin-top: 50px;
+    display: inline-block;
+}
+    #stepsHeader, .stepsCardsText, .stepNumber{
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    #stepsHeader, .stepNumber{
+        color: rgb(46, 46, 46);
+    }
+    #stepsCardsContainer{
+        width: 900px;
+        height: auto;
+        margin-bottom: 40px;
+        display: inline-flex;
+    }
+    .stepsCards{
+        width: 270px;
+        height: auto;
+        margin: 0 15px 0 15px;
+        text-align: center;
+    }
+    .stepsCardsImg{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .stepNumber{
+        margin-top: 20px;
+    }
+    .stepsCardsText{
+        margin: 20px 0 0 20px;
+        color: rgb(104, 104, 104);
+        margin: 30px 10px 0 10px;
+    }
+
+#proFooter{
+    width: 100%;
+    height: auto;
+    background: #282c35;
+    margin-top: 150px;
+}
+    #footerContainer{
+        width: 1100px;
+        height: auto;
+        display: inline-block;
+    }
+    #proFooterHeader{
+        width: 100%;
+        height: 60px;
+        display: block;
+        padding: 20px 0 15px 0;
+    }
+
+    #footerZomatoLogo{
+        width: 60px;
+        height: 60px;
+        float: left;
+        border-radius: 5px;
+    }
+    #footerLanguage{
+        float: right;
+    }
+
+    #footerLanguage{
+        width: 150px;
+        height: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.288);
+        float: right;
+        border-radius: 10px;
+        background: #282c35;
+        color: white;
+    }   
+    #footerLanguageImg{
+        width: 20px;
+        height: 20px;
+        margin: 8px 0 0 10px;
+        float: left;
+    }
+    #footerLanguageText{
+        margin: 8px 20px 0 0;
+        font-size: 18px;
+    }
+    #dropDown{
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin: -20px 10px 0 0;
+    }
+    #languages{
+        width: 140px;
+        height: auto;
+        position: absolute; 
+        right: 13.8%;
+        margin-top: 40px;
+        background: #626a7c;
+        color: white;
+        border-radius: 10px;
+        visibility: hidden;
+    }
+
+#customerSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-top: 1px solid rgba(87, 86, 86, 0.568);
+    border-bottom: 1px solid rgba(87, 86, 86, 0.568);
+    padding-bottom: 25px;
+}
+    #countrySection{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-bottom: 25px;
+    }
+    .sectionCards{
+        font-family: sans-serif;
+        color: rgba(145, 145, 145, 0.76);
+        text-align: justify;
+        margin: 0 110px 0 20px;
+    }
+    .cardsHead{
+        font-weight: bold;
+        font-size: 20px;
+        float: left;
+    }
+    .cardsLinks{
+        font-size: 13px;
+        color: rgb(189, 188, 188);
+        cursor: pointer;
+    }
+
+#documentationsSection{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgba(87, 86, 86, 0.568);
+    border-bottom: 1px solid rgba(87, 86, 86, 0.568);
+    padding: 20px 0 20px 0;
+}
+    #otherLinksContainers{
+        width: 650px;
+        display: flex;
+        color:  rgb(202, 202, 202);
+        font-size: 10px;
+    }
+    .otherLinks{
+        margin: 0 15px 0 15px;
+        font-family: sans-serif;
+        font-weight: 200;
+    }
+    #socialMediaLinks{
+        display: flex;
+        float: right;
+        margin-top: -20px;
+    }
+    .socialIcon{
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 5px;
+    }
+
+#agreementSentence{
+    font-family: sans-serif;
+    font-size: 10px;
+    color: rgba(145, 145, 145, 0.76);
+    margin-top: 20px;
+    text-align: justify;
+}

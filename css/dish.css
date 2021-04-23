@@ -1,0 +1,947 @@
+body, html{
+    margin: 0px;
+    text-align: center;
+    height: auto;
+}
+body, button, input, input::placeholder {
+    font-family: Okra,Helvetica,sans-serif;
+}
+body, button, textarea, input, input::-webkit-input-placeholder {
+    font-family: Okra,Helvetica,sans-serif;
+}
+
+#topBar{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1.1px solid rgba(150, 148, 148, 0.158);
+}
+    #topBarContent{
+        width: 1100px;
+        height: 60px;
+        font-family: sans-serif;
+        display: inline-flex;
+    }
+    #trendZomatoText{
+        width: 120px;
+        height: 30px;
+        margin: 10px 35px 0 10px;
+    }
+    #searchProfile{
+        width: 950px;
+        display: flex;
+        float: right;
+    }
+
+                                                                    /*Search city, cuisine and restaurant*/
+.searchCity{
+    width: 800px;
+    height: 45px;
+    border-radius : 8px;
+    background: white;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.233);
+    border: 0.5px solid rgba(43, 42, 42, 0.082);
+    box-shadow: 0 4px 6px 0 rgba(36, 36, 36, 0.048), 0 6px 10px 0 rgba(36, 36, 36, 0.048);
+    display: inline-flex;
+}
+    #city{
+        float: left;
+        width: 34%;
+        height: 55px;
+        border-radius: 10px;
+    }
+    #location{
+        float: left;
+        position: absolute;
+        margin: 13px 0 0 0;
+    }
+    #cityText{
+        width: 140px;
+        padding: 10px;
+        margin: 6px 0 0 35px;
+        border: 0px;
+        outline: 0px; 
+        font-size: 15px;
+    }
+    #dropDownArrow{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin: 10px 0 0 -20px;
+    }
+    .dArrow{
+        transform: rotate(0deg);
+        transition: transform 0.2s linear;
+    }
+    .dArrow.open{
+        transform: rotate(180deg);
+        transition: transform 0.2s linear;
+    }
+    #separator{
+        float: right;
+        color: rgb(223, 223, 223);
+        font-weight: bolder;
+        margin: 15px 0 0 0;
+    }
+    #dish{
+        width: 65%;
+        height: 55px;
+        border-radius: 10px;
+        right: 0px;
+        margin-left: 15px;
+    }
+    #dishText{
+        float: left;
+        width: 80%;
+        margin: 15px 0 0 0;
+        border: 0px white;
+        outline: 0px; 
+        font-size: 15px;
+    }
+    #searchIcon{
+        width: 20px;
+        height: 20px;
+        margin: 12px 10px 0 0;
+        float: right;
+    }
+                                                                    /*Reccomendations box*/
+#recommendations{
+    width: 350px;
+    height: auto;
+    margin: 70px 0 0 30px;
+    background: white;
+    border-radius: 10px;
+    color: rgb(78, 78, 78);
+    border: 1px solid rgb(156, 156, 156);
+    position: absolute;
+    visibility: hidden;
+}
+        #currentLocaion{
+            height: 50px;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+        }
+        #currentLocaionIcon{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            margin: 10px 0 0 10px;
+        }
+        #currentLocationText{
+            position: absolute;
+            margin: 15px 0 0 55px;
+        }
+        #popularText{
+            height: 30px;
+            padding-left: 20px;
+        }
+        .recomCities{
+            width: auto;
+            height: 30px;
+            border-top: 1px solid rgba(223, 221, 221, 0.356);
+        }  
+        .recomCities:hover{
+            background: rgb(235, 235, 235);
+            transition: 0.6s ease-in-out;
+        } 
+        .recomCitiesText{
+            margin: 5px 0 0 20px;
+        }
+        #lastRecom{
+            border-radius: 0 0 10px 10px;
+        }
+
+                                                                        /*Trending banner*/
+#signInUp{
+    width: auto;
+    height: 45px;
+    margin: 8px 0 0 20px;
+    display: inline-flex;
+}
+    .logSign{
+        color:  rgba(255, 0, 0, 0.603);
+    }
+
+#subBody{
+    width: 1100px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    background: chartreuse;
+}
+
+#upperHalf, #lowerHalf{
+    width: 100%;
+    height: auto;
+    text-align: justify;
+}
+    #imgGallery{
+        width: 100%;
+        height: 380px;
+        display: flex;
+        margin: 20px 0 20px 0;
+    }
+    #leftGallery{
+        width: 65%;
+        height: 100%;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    #leftGallery img, .rGCards img{
+        transition: transform .5s ease;
+      }
+    #leftGallery:hover img, .rGCards:hover img{
+        transform: scale(1.05);
+        filter: brightness(1.04);
+    }
+    #lImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #rightGallery{
+        width: 445px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .rGCards{
+        width: 180px;
+        height: 180px;
+        margin: 0 0 15px 30px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .rGCardsImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #dimCardContainer{
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.5);
+    }
+    #dimCardText{
+        position: absolute;
+        color: white;
+        top: 80px;
+        margin-left: 40px;
+    }
+    #addPic{
+        background-image: url("https://b.zmtcdn.com/data/zomaland/a6750d1975cd3139cb91535088efb0c71578913426.jpeg");
+        background-size: cover;
+        color: white;
+        text-align: center;
+    }
+    #icon{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        background: rgba(79, 79, 79, 0.6);
+        border-radius: 50%;
+        justify-content: center;
+        margin: 55px 0 0 65px;
+    }
+    #camSvg{
+        margin-top: 12.5px;
+    }
+
+#fixedDiv{
+    width: 100%;
+    height: 280px;
+}
+
+#descOfDish{
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-family: Okra,Helvetica,sans-serif;
+    background: white;
+}
+    .descDetails, #descHead, #descDetails{
+        text-align: justify;
+        margin: 0px 0 10px 0;
+        color: rgb(130, 130, 130);
+        cursor: pointer;
+    }
+    .descDetails:hover{
+        color: rgb(109, 109, 109);
+    }
+    #descHead{
+        color: rgb(28, 28, 28); 
+    }
+    #subDesc{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    #subDesc p{
+        margin: 0px 10px 0 0;
+    }
+    #openClose{
+        font-weight: bold;
+        color: rgb(255, 216, 145);
+        cursor: text;
+    }
+    #infoIcon{
+        cursor: pointer;
+    }
+    .dHover:hover{
+        cursor: pointer;
+        color: black;
+    }
+
+    #descRight{
+        width: auto;
+        height: auto;
+        display: flex;
+        position: absolute;
+        margin-left: 780px;
+    }
+    #dRLeft, #dRRight{
+        margin-left: 20px;
+    }
+    .starContainer{
+        width: auto;
+        height: auto;
+        margin-bottom: 0px;
+        display: inline-flex;
+    }
+    .starContainer img {
+        width: 20px;
+        height: 20px;
+        margin-top: 0px;
+    }
+    .starContainer p{ 
+        font-size: 15px;
+        font-weight: bold;
+        margin: 2px 0 0 10px;
+    }
+    .reviews{
+        font-weight: bold;
+        font-size: 14px;
+        margin: 5px 0 0px 0;
+    }
+    #dashEnd{
+        font-size: 12px;
+        margin-right: 2px;
+        margin-top: 0px;
+    }
+
+#buttonsContainer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+    transition: opacity 0.1s ease-in-out 0s;
+}   
+    .buttons, #buttons{
+        width: auto;
+        height: 45px;
+        display: inline-flex;
+        text-align: center;
+        border: 1px solid rgb(156, 156, 156);
+        border-radius: 10px;
+        color: rgb(28, 28, 28);
+        margin-right: 20px;
+        background: white;
+        cursor: pointer;
+    }
+    #buttons{
+        background: rgb(255, 106, 106);
+        color: white;
+        border: 0px;
+    }
+    #buttons:hover{
+        background: rgb(255, 83, 83);
+    }
+    .buttons:hover{
+        background: rgb(247, 247, 247);
+    }
+    .buttons img, #buttons img{
+        width: 15px;
+        height: 15px;
+        margin: 15px 10px 0 15px;
+    }
+    .buttons p, #buttons p{
+        margin-right: 15px;
+    }
+
+#navButtonContainer{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    transition: transform 0.2s ease-in-out 0s;
+    position: relative;
+    background: white;
+}
+    .navButton, #navButton{
+        width: 200px;
+        height: auto;
+        padding: 5px 13px 5px 12px;
+        border-bottom: 2px solid rgb(170, 170, 170);
+        font-weight: bold;
+        color: rgb(105, 105, 105);
+        cursor: pointer;
+        text-align: center;
+    }   
+    .active{
+        border-bottom: 2px solid rgb(255, 83, 83);
+        color: rgb(255, 83, 83);
+    }
+
+
+#spacingDiv{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    transition: transform 0.2s ease-in-out 0s;
+}
+
+#lowerHalf{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+                                                                /*Lower Half*/
+    .content{
+        width: 100%;
+        display: flex;
+        margin-right: 10px;
+        display: none;
+    }  
+    .show{
+        display: flex;
+    }                                                          
+    .leftPart{
+        width: auto; 
+        height: auto;   
+    }
+    .leftPart h1{
+        color:  rgb(28, 28, 28);
+        margin-bottom: 0px;
+    }   
+    .head{
+        font-size: 23px;
+        margin-top: 0px;
+    }
+    .leftPart img{
+        border-radius: 8px;
+        margin: 15px 15px 0 0;
+    }
+    .subHead{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #cuisinesButton{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .cButton{
+        width: auto;
+        height: auto;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid rgb(207, 207, 207);   
+        border-radius: 20px; 
+        margin-right: 20px;
+        background: white;
+        color: rgb(17, 145, 153);
+        font-weight: 300;
+    }
+
+    .headDesc{
+        width: 100%;
+        font-size: 18px;
+        color: rgb(79, 79, 79);
+        margin: -20px 0 50px 0;
+    }
+    #sponsorsCardContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .sponsorsCard{
+        width: 380px;
+        height: auto;
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+    #cardDesc{display: flex;}
+
+    .sponsorsCardImg{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .sponsorCardHead{
+        font-size: 25px;
+        color: rgb(28, 28, 28);
+        margin: 10px 50px 0 0;
+    }
+    #reviewsContainer{
+        width: auto;
+        height: 50px;
+        display: flex;
+    }
+    .reviews{
+        width: auto;
+        height: 40px;
+        display: flex;
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    .reviews img{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .reviews p{
+        margin-top: 15px;
+        color: rgb(28, 28, 28);
+    }
+    .subR{
+        color:  rgb(79, 79, 79);
+    }
+    #separator{
+        color: rgb(184, 184, 184);
+        margin: 15px 10px 0 10px;
+    }
+
+#moreInfoContainer{
+    width: 80%;
+    height: auto;
+    display: inline-block;
+}
+.moreInfo{
+    width: 40%;
+    height: 35px;
+    display: inline-flex;
+    margin-left: 0px;
+}
+.moreInfo img{
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+
+.rightPart{
+    width: auto;
+    height: auto;
+    transition: transform 0.6s ease-in-out;
+    margin-left: 20px;
+    float: right;
+}
+    .rPCard{
+        width: 350px;
+        height: auto;
+        background: white;
+        margin: 20px 10px 0 10px;
+        padding: 20px 10px 20px 10px;
+        border-radius: 10px;
+        box-shadow: -5px 0px 6px rgba(230, 230, 230, 0.377), 0px 5px 4px rgba(230, 230, 230, 0.377), 5px 5px 4px rgb(230, 230, 230, 0.377);
+    }
+    .cNumber{
+        color: rgb(245, 112, 130);
+        font-size: 18px;
+        line-height: 10px;
+    }
+    #cardLower{
+        width: auto;
+        height: auto;
+        margin: 30px 0 20px 0;
+    }
+    #cardLower img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .filter{
+        width:200px;
+        height: 30px;
+        padding: 15px 90px 5px 10px;
+        color: rgb(79, 79, 79);
+        display: flex;
+        background: white;
+        border: 0px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .selected{
+        background: linear-gradient(to left, rgba(255, 151, 151, 0.6), white);
+        border-right: 5px solid rgb(255, 6, 6);
+    }
+
+    .orderDish{
+        width: 950px;
+        height: 100px;  
+        display: flex;
+        margin: 0 0 30px -20px;
+        cursor: pointer;
+    }
+    .leftOD{
+        width: 800px;
+        height: auto;
+        display: flex;
+        margin-left: 10px;
+    }
+    .dishImg{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .vegIcon{
+        width: 15px;
+        height: 15px;
+        margin: 5px 0 0 -20px;
+    }
+    .orderDetails{
+        margin-left: 20px;
+        font-size: 25px;
+        color: rgb(28, 28, 28);
+    }
+    .orderHead{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: rgb(28, 28, 28);
+        margin: 0px;
+    }
+    .orderDetails p{
+        margin: 5px 0 5px 0;
+    }
+    .orderPricing{
+        display: flex;
+    }
+    .orderPricing p{
+        margin: 5px 10px 0 10px;
+    }
+    .strike{
+        text-decoration: line-through;
+        font-size: 15px;
+        color: rgb(184, 184, 184);
+    }
+    .ogPrice, .orderOff{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .ogPrice{
+        color: rgb(77, 77, 77);
+    }
+    .orderOff{
+        color: rgb(255, 98, 119);
+    }
+    .orderDesc{
+        width: 600px;
+        font-size: 15px;
+        color: rgb(79, 79, 79);
+    }
+
+    .rightOD{
+        width: 150px;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .addButton{
+        width: 50px;
+        height: 40px;
+        display: flex;
+        background: white;
+        padding: 0 20px 5px 20px;
+        border-radius: 8px;
+        border: 1px solid rgb(221, 221, 221);
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    .addButton p{
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .plus{
+        color:  rgb(255, 98, 119);
+    }
+
+    .reviewsCard{
+        width: 850px;
+        height: auto;
+        margin-top: 30px;
+    }
+    .reviewHead{
+        display: flex;
+    }
+    .lHead{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background: rgb(255, 142, 142);
+        float: left;
+        cursor: pointer;
+    }
+    .rHead{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .nameFol{
+        width: 300px;
+        height: auto;
+        color: rgb(54, 54, 54);
+        float: left;
+        cursor: pointer;    
+    }
+    .nameFol h1{
+        margin: 0px 0 0 10px;
+    }
+    .nameFol div{
+        width: auto;
+        height: auto;
+        display: flex;
+        font-size: 20px;
+        color: rgb(136, 136, 136);
+        margin-top: -10px;
+    }
+    .nameFol div p{
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .followBtn{
+        width: 80px;
+        height: 40px;
+        border: 1px solid rgb(245, 112, 130);
+        border-radius: 8px;
+        margin-left: 410px;
+        padding: 3px;
+        cursor: pointer;
+    }
+    .followBtn p{
+        margin: 13px 0 0 15px;
+    }
+
+    .starReviews{
+        width: auto;
+        height: auto;
+        display: flex;
+        margin-left: 50px;
+    }
+    .starReviews img{
+        width: 20px;
+        height: 20px;
+    }
+    .rating{
+        margin-left: 10px;
+        font-weight: bold;
+        color: rgb(54, 54, 54);
+    }
+    .timeP{
+        font-size: 18px;
+        color:  rgb(136, 136, 136);
+        margin-left: 30px;
+    }
+    .userReview{
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        margin-left: 50px;
+        color: rgb(136, 136, 136);
+    }
+    .likeCmtShr{
+        display: flex;
+        margin-left: 50px;
+    }
+    .LCSBtn{
+        display: flex;
+        padding: 5px 30px 5px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(136, 136, 136);
+        cursor: pointer;
+    }
+    .LCSBtn img{
+        width: 22px;
+        height: 22px;
+        margin-right: 20px;
+    }
+    .ratingStar{
+        width: 35px;
+        height: 35px;
+    }
+    .rPreview{
+        color: rgb(245, 112, 130);
+        margin-top: 5px;
+        margin: 5px 0 8px 0;
+    }
+    .relatedSearches, .photosContainer{
+        width: 1200px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .relatedSearches h1{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .relatedSearches div{
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 0px;
+        margin-top: 10px;
+    }
+    .relatedSearches div p{
+        font-size: 16px;
+        color: rgb(156, 156, 156);
+        font-family: Okra, Helvetica, sans-serif;
+        background: yellow;
+        margin-right: 20px;
+    }
+    .relatedSearches p:hover{
+        color: black;
+    }
+    .photosContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footer{
+        width: 100%;
+        height: 350px;
+        margin-top: 50px;
+        font-family: sans-serif;
+        background: rgba(228, 227, 227, 0.288);
+    }
+            #footerContainer{
+                width: 1100px;
+                height: auto;
+                display: inline-block;
+                text-align: left;
+            }
+            #footerBar{
+                width: 100%;
+                height: auto;
+                display: inline-flex;
+                margin-top: 30px;
+            }
+            #footerZomatoText{
+                font-size: 35px;
+                float: left;
+                font-weight: bold;
+                color:  rgba(255, 0, 0, 0.603);
+            }
+            .optionContainer{
+                display: flex;
+                margin: 0 0 0 550px;
+            }
+            .fOption{
+                width: 150px;
+                height: 40px;
+                border: 1px solid rgba(0, 0, 0, 0.288);
+                margin-left: 20px;
+                right: 0px;
+                border-radius: 10px;
+                cursor: pointer;
+                position: relative;
+                display: flex;
+            }   
+            .countryFlag{
+                width: 35px;
+                height: 20px;
+                margin: 10px 0 0 10px;
+                border-radius: 4px;
+            }
+            .countryName{
+                margin-left: 15px;
+                font-size: 18px;
+                margin-top: 10px;
+                color: rgb(89, 89, 89);
+            }
+            .optionDiv{
+                width: auto;
+                height: auto;
+                right: 7%;
+                opacity: 0;
+                margin-top: -240px;
+                position: absolute;
+                background: white;
+                padding: 1px 0 10px 0; 
+                color: rgb(130, 130, 130); 
+                box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+                transition: 0.4s ease;
+            }
+            .countryLoc{
+                width: 550px;
+                display: flex;
+                flex-wrap: wrap;
+                right: 25%;
+                margin-top: -180px;
+            }
+            .divTail{
+                width: 20px;
+                height: 20px;
+                background: white;
+                position: absolute;
+                margin-left: 60px;
+                bottom: -10px;
+                right: 30px;
+                transform: rotate(45deg);
+            }
+            .countryCard{
+                width: 150px;
+                display: flex;
+                margin-right: 30px;
+            }
+            .langOption{
+                width: 150px;
+                height: 20px;
+                margin: 20px 0 0 20px;
+                text-align: left;
+            }
+        
+            #footerLinksContainer{
+                width: 1100px;
+                height: 200px;
+                margin: 40px 0 0 0;
+                display: inline-flex;
+            }
+        
+            .footerLinksCards{
+                width: 200px;
+                height: 200px;
+                margin: 0 20px 0 20px;
+            }
+            .linksHead{
+                font-size: 17px;
+                font-weight: 500;
+            }
+            .links{
+                font-size: 15px;
+                font-weight: 100;
+                margin: 10px 0 10px 0;
+                color: rgba(0, 0, 0, 0.479);
+            }
+            .links:hover{
+                color:  rgb(97, 97, 97);
+            }
+            #socialMediaLinks{
+                display: flex;
+                margin-top: 20px;
+            }
+            .socialIcon{
+                width: 30px;
+                height: 30px;
+                margin: 0 5px 0 5px;
+            }
+            #download{
+                margin-top: 30px;
+            }
+            .downloadOption{
+                width: 120px;
+                height: 40px;
+                margin: 0 0 5px 0;
+            }

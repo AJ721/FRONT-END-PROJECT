@@ -1,0 +1,687 @@
+body, html{
+    width: 100%;
+    margin: 0%;
+    height: auto;
+    text-align: center;
+}
+#homePage{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    position: relative;
+}
+
+#imgContainer{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0px;
+}
+                                                                    /*Background image*/
+#burger{
+    width: 100%;
+    height: 450px;
+    border: 0px;
+    object-fit: cover;
+}
+
+.nav{
+    width: 1100px;
+    height: auto;
+    background: transparent;
+    color: white;
+    position: relative;
+    padding-top: 30px;
+}
+#homeTopNav{
+    text-align: center;
+}
+.appLink{
+    float: left;
+    font-size: 15px;
+}
+.log{
+    float: right;
+    margin-left: 20px;
+    font-family:  Okra,Helvetica,sans-serif;
+    font-size: 1.2rem;
+}
+
+#head{
+    width: auto;
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    margin-top: 100px;
+}
+.title{
+    width: 250px;
+    height: 50px;
+    margin-bottom: -20px;
+}
+.title1{
+    margin-bottom: 30px;
+}
+
+                                                                    /*Search City and Cuisine*/ 
+.searchCity{
+    width: 760px;
+    height: 55px;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    margin: 5px 0 0 15%;
+}
+    #city{
+        float: left;
+        width: 30%;
+        height: 55px;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+    }
+    #location{
+        float: left;
+        position: absolute;
+        margin: 15px;
+    }
+    #cityText{
+        padding: 10px;
+        margin: 5px 0 0 40px;
+        border: 0px;
+        outline: 0px; 
+        font-size: 15px;
+    }
+
+    #dropDownArrow{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: -45px;
+        margin: 15px 0 0 50px;
+    }
+    .dArrow{
+        transform: rotate(0deg);
+        transition: transform 0.2s linear;
+    }
+    .dArrow.open{
+        transform: rotate(180deg);
+        transition: transform 0.2s linear;
+    }
+    #separator{
+        float: right;
+        position:absolute;
+        color: grey;
+        font-weight: bolder;
+        margin-left: 280px;
+    }
+    #dish{
+        position: absolute;
+        width: 65%;
+        height: 55px;
+        border-radius: 10px;
+        right: 0px;
+    }
+    #dishText{
+        float: left;
+        width: 80%;
+        margin-left: 30px;
+        margin-top: 20px;
+        border: 0px white;
+        outline: 0px; 
+        font-size: 15px;
+    }
+    #searchIcon{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin: 20px 0 0 0;
+    }
+
+                                                                    /*Recommendations of City*/
+#recommendations{
+    width: 350px;
+    height: auto;
+    position: relative;
+    left: 15%;
+    background: white;
+    border-radius: 10px;
+    color: rgb(78, 78, 78);
+    visibility: hidden;
+    margin-top: 10px;
+}
+    #currentLocaion{
+        height: 50px;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 0px;
+        display: flex;
+    }
+    #currentLocaionIcon{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    #currentLocationText{
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+    #popularText{
+        height: 30px;
+        padding-left: 20px;
+        margin-top: 0px;
+    }
+    .recomCities{
+        width: auto;
+        height: 30px;
+        border-top: 1px solid rgba(223, 221, 221, 0.356);
+    }  
+    .recomCities:hover{
+        background: rgb(235, 235, 235);
+        transition: 0.6s ease-in-out;
+    } 
+    .recomCitiesText{
+        position: absolute;
+        margin: 5px 0 0 20px;
+    }
+    #lastRecom{
+        border-radius: 0 0 10px 10px;
+    }
+
+                                                                    /*Category cards*/
+#cardContainer{
+    width: 100%; 
+    padding: 10px; 
+    margin-top: -100px;
+}
+    .cards{
+        width: 260px;
+        height: 250px;
+        border-radius: 10px;
+        float: left;
+        margin: 0 5px 0 5px;
+        border: 1px solid rgb(236, 236, 236);
+        cursor: pointer;
+        
+    }
+    .cards:hover{
+        transform: scale(1.02);
+        box-shadow: 0 4px 2px 0 rgba(167, 167, 167, 0.2), 0 6px 2px 0 rgba(189, 189, 189, 0.19);   
+        transition: 0.2s ease-in-out;
+    }
+    .imgClass{
+        width: 260px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .cardText{
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+        color: rgb(78, 78, 78);
+        border: 1px grey;
+        font-family: Okra,Helvetica,sans-serif;
+    }
+
+                                                                /*Collections Cards and p tags for the selected city*/
+#collections{
+    width: 1100px;
+    color: black;
+    position: relative;
+    margin: 25% 0 0 0;
+    text-align: left;
+}
+    #collectionsText{
+        font-size: 45px;
+        color: rgba(0, 0, 0, 0.877);
+        margin: 0 0 10px 15px;
+    }
+    #subCollectionsText{
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.733);
+        margin-left: 15px;
+    }
+    #collectionsCardContainer{
+        width: 100%;
+        height: 310px;
+        display: flex;
+    }
+    .collectionsCards{
+        width: 260px;
+        border-radius: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .collectionsImgClass{
+        width: 260px;
+        height: 310px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .collectionsCardText{
+        position: absolute;
+        color: rgba(255, 255, 255, 0.767);
+        font-size: 20px;
+        bottom: 5%;
+        margin-left: 10px;
+    }
+    .rightArrowIcon{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        transform: rotate(270deg);
+        bottom: 5%;
+        margin-left: 230px
+    }
+
+
+                                                                        /*Popular places in the city*/
+#popularaties{
+    color: black;
+    margin-top: 100px;
+}
+    #popularHeading{
+        width: 1100px;
+        font-size: 45px;
+        color: rgba(0, 0, 0, 0.733);
+        text-align: center;
+    }
+    #placesCardContainer{
+        width: 100%; 
+        text-align: center; 
+        display: inline-block;
+    }
+    .placeCards{
+        font-size: 25px;
+        width: 340px;
+        height: 60px;
+        color: black;
+        border-radius: 10px;
+        float: left;
+        margin: 0 15px 20px 0;
+        position: relative;
+        border: 2px solid rgba(223, 221, 221, 0.473);
+        background: white;
+        cursor: pointer;
+    }
+    .placeCards:hover{
+        transition: 0.4s ease;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 6px 0 rgba(0, 0, 0, 0.19);                
+    }
+    .placeName{
+        margin-top: 15px;
+    }
+    .placeArrow{
+        transform: rotate(270deg);
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        float: right;
+    }
+
+
+#userLink{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+    #mobImgContainer, #getDetails{
+        width: 550px;
+    }
+    #blank{
+        width: 140px;
+        height: 9px;
+        background: white;
+        position: absolute;
+        margin: 65px 0 0 200px;
+    }
+    #mobImg{
+        position: absolute;
+        width: 300px;
+        height: 450px;
+        margin-top: -10px;
+        left: 10%;
+    }
+    #getDetails{
+        text-align: left;
+        padding-top: 50px;
+    }
+    #appHead{
+        display: block;
+        margin-top: 0px;
+        text-align: left;
+        margin-left: 5px;
+        margin: -20px 0 0 5px;
+    }
+    #detailsHead{
+        color: rgb(28, 28, 28);
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    #subSentence{
+        font-size: 20px;
+        font-weight: normal;
+        color: rgb(54, 54, 54);
+    }
+    #radioGroup{
+        display: flex;
+    }
+    .radio{
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0 10px 0 10px;
+        border: 1px solid rgb(245, 45, 45);
+    }
+    .radioText{
+        margin-right: 40px;
+        color: rgb(54, 54, 54);
+        display: flex;
+        cursor: pointer;
+    }
+    #emailNumberInput{
+        margin-top: 25px;
+        padding-left: 10px;
+        display: flex;
+    }
+    #form1{
+        position: absolute;
+    }
+    #form2{
+        margin-top: 0px;
+        visibility: hidden;
+    }
+    #cCode{
+        width: 70px;
+        float: left;
+        border-radius: 6px 0 0 6px;
+    }
+    #cCodeText{
+        margin: 15px 0 0 20px;
+    }
+    #cCode, #pNumInput{
+        height: 46px;
+        color:  rgb(150, 150, 150);
+        outline: 0px; 
+        border: 0px;
+    }
+    #pNumInput{
+        width: 226px;
+        float: right;
+        border-radius: 0 6px 6px 0;
+        position: absolute;
+        font-size: 20px;
+    }
+    #eNInput{
+        padding-left: 20px;
+    }
+    #eNInput, #phoneNumber{
+        width: 280px;
+        height: 48px;
+        border: 1px solid rgb(177, 177, 177);
+        outline: 0px; 
+        border-radius: 6px;
+        font-size: 17px;
+        padding-right: 20px;
+    }
+    #phoneNumber{
+        width: 300px;
+        padding-right: 20px;
+    }
+    #eNInputText{
+        width: 35px;
+        background: white;
+        position: absolute;
+        font-size: 17px;
+        color:  rgb(150, 150, 150);
+        margin: 15px 0 0 20px;
+        padding: 0 20px 0 10px;
+    }
+    #eNButton{
+        width: 150px;
+        height: 50px;
+        background: chartreuse;
+        margin-left: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+    }
+    #eNButton > p{
+        margin-top: 15px;
+    }
+    #eNButton:hover{
+        background: rgb(112, 223, 2);
+    }
+    #invalid1, #invalid2{
+        font-size: 13px;
+        color: rgb(255, 75, 75);
+        margin: 2px 0 0 10px;
+        position: absolute;
+        display: none;
+    }
+    #dFromText{
+        color: rgba(0, 0, 0, 0.2);
+        margin: 30px 0 0 20px;
+    }
+    .dFromIcons{
+        width: 150px;
+        height: 50px;
+        margin: 10px 0 0 20px;
+        cursor: pointer;
+    }
+
+#exploreNear{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: 100px;
+}
+    #exploreHead, .cuisinesHead{
+        color: rgb(54, 54, 54);
+    }
+    #exploreHead{
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .cuisinesHead{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .exploreCuisines{
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .exploreLinkContainer{
+        width: 100%;
+        height: auto;
+    }
+    #leftMost{
+        margin-left: 0px;
+    }
+    .exploreLink{
+        width: auto;
+        height: 25px;
+        margin: 0 10px 0 10px;
+        color: rgb(130, 130, 130); 
+        text-decoration: none;
+        line-height: 1.8;
+        cursor: pointer;
+    }
+    .exploreLink:hover, .chainLink:hover{
+        color:  rgb(97, 97, 97);
+    }
+    .divDots{
+        width: 0.3rem;
+        height: 0.3rem;
+        background: rgb(54, 54, 54);
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 4px;
+    }
+
+
+#restCity{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: 50px;
+}
+    #chainLinkContainer{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .chainLink{
+        width: 20%;
+        display: inline-block;
+        line-height: 1.3;
+        margin: 0 50px 20px 0;
+        color: rgb(130, 130, 130); 
+        cursor: pointer;
+    }
+    
+
+#footer{
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    background: rgba(228, 227, 227, 0.288);
+}
+        #footerContainer{
+            width: 1100px;
+            height: auto;
+            display: inline-block;
+            text-align: left;
+        }
+        #footerBar{
+            width: 100%;
+            height: auto;
+            display: inline-flex;
+            margin-top: 30px;
+        }
+        #footerZomatoText{
+            font-size: 35px;
+            float: left;
+            font-weight: bold;
+            color:  rgba(255, 0, 0, 0.603);
+        }
+
+        .optionContainer{
+            display: flex;
+            margin: 0 0 0 550px;
+        }
+        .fOption{
+            width: 150px;
+            height: 40px;
+            border: 1px solid rgba(0, 0, 0, 0.288);
+            margin-left: 20px;
+            right: 0px;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+        }   
+        .countryFlag{
+            width: 35px;
+            height: 20px;
+            margin: 10px 0 0 10px;
+            border-radius: 4px;
+        }
+        .countryName{
+            margin-left: 15px;
+            font-size: 18px;
+            margin-top: 10px;
+            color: rgb(89, 89, 89);
+        }
+        .optionDiv{
+            width: auto;
+            height: auto;
+            right: 7%;
+            opacity: 0;
+            margin-top: -230px;
+            position: absolute;
+            background: white;
+            padding: 1px 0 10px 0; 
+            color: rgb(130, 130, 130); 
+            box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+            transition: 0.4s ease;
+        }
+        .countryLoc{
+            width: 550px;
+            display: flex;
+            flex-wrap: wrap;
+            right: 25%;
+            margin-top: -170px;
+        }
+        .divTail{
+            width: 20px;
+            height: 20px;
+            background: white;
+            position: absolute;
+            margin-left: 60px;
+            bottom: -10px;
+            right: 30px;
+            transform: rotate(45deg);
+        }
+        .countryCard{
+            width: 150px;
+            display: flex;
+            margin-right: 30px;
+        }
+        .langOption{
+            width: 150px;
+            height: 20px;
+            margin: 20px 0 0 20px;
+            text-align: left;
+        }
+    
+        #footerLinksContainer{
+            width: 1100px;
+            height: 200px;
+            margin: 40px 0 0 0;
+            display: inline-flex;
+        }
+    
+        .footerLinksCards{
+            width: 200px;
+            height: 200px;
+            margin: 0 20px 0 20px;
+        }
+        .linksHead{
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .links{
+            font-size: 15px;
+            font-weight: 100;
+            margin: 10px 0 10px 0;
+            color: rgba(0, 0, 0, 0.479);
+            cursor: pointer;
+        }
+        .links:hover{
+            color:  rgb(97, 97, 97);
+        }
+        #socialMediaLinks{
+            display: flex;
+            margin-top: 20px;
+        }
+        .socialIcon{
+            width: 30px;
+            height: 30px;
+            margin: 0 5px 0 5px;
+        }
+        #download{
+            margin-top: 30px;
+        }
+        .downloadOption{
+            width: 120px;
+            height: 40px;
+            margin: 0 0 5px 0;
+        }

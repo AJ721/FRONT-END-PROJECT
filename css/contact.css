@@ -1,0 +1,477 @@
+body, html{
+    margin: 0px;
+    text-align: center;
+    height: auto;
+}
+#imgContainer{
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    margin-top: 60px;
+}
+#imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#subBody{
+    width: 1100px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    font-family: Okra, Helvetica, sans-serif;   
+}
+    #topBarContent{
+        width: 1100px;
+        height: 60px;
+        font-family: sans-serif;
+        display: inline-flex;
+    }
+    #trendZomatoText{
+        width: 120px;
+        height: 30px;
+        margin: 10px 35px 0 0;
+    }
+    #searchProfile{
+        width: 950px;
+        display: flex;
+        float: right;
+        margin-left: 20px;
+    }
+
+    .searchCity{
+        width: 700px;
+        height: 45px;
+        border-radius : 8px;
+        background: white;
+        margin-top: 8px;
+        color: rgba(0, 0, 0, 0.233);
+        border: 0.5px solid rgba(43, 42, 42, 0.082);
+        box-shadow: 0 4px 6px 0 rgba(36, 36, 36, 0.048), 0 6px 10px 0 rgba(36, 36, 36, 0.048);
+        display: inline-flex;
+    }
+    #city{
+        float: left;
+        width: 34%;
+        height: 55px;
+        border-radius: 10px;
+    }
+    #location{
+        float: left;
+        position: absolute;
+        margin: 13px 0 0 0;
+    }
+    #cityText{
+        width: 140px;
+        padding: 10px;
+        margin: 6px 0 0 35px;
+        border: 0px;
+        outline: 0px; 
+        font-size: 15px;
+    }
+    #dropDownArrow{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin: 10px 0 0 -20px;
+    }
+    .dArrow{
+        transform: rotate(0deg);
+        transition: transform 0.2s linear;
+    }
+    .dArrow.open{
+        transform: rotate(180deg);
+        transition: transform 0.2s linear;
+    }
+    #separator{
+        float: right;
+        color: rgb(223, 223, 223);
+        font-weight: bolder;
+        margin: 15px 0 0 0;
+    }
+    #dish{
+        width: 65%;
+        height: 55px;
+        border-radius: 10px;
+        right: 0px;
+        margin-left: 15px;
+    }
+    #dishText{
+        float: left;
+        width: 80%;
+        margin: 15px 0 0 0;
+        border: 0px white;
+        outline: 0px; 
+        font-size: 15px;
+    }
+    #searchIcon{
+        width: 20px;
+        height: 20px;
+        margin: 12px 10px 0 0;
+        float: right;
+    }
+                                                                    /*Reccomendations box*/
+    #recommendations{
+        width: 350px;
+        height: auto;
+        margin: 70px 0 0 30px;
+        background: white;
+        border-radius: 10px;
+        color: rgb(78, 78, 78);
+        border: 1px solid rgb(156, 156, 156);
+        position: absolute;
+        visibility: hidden;
+    }
+    #currentLocaion{
+        height: 50px;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+    }
+    #currentLocaionIcon{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        margin: 10px 0 0 10px;
+    }
+    #currentLocationText{
+        position: absolute;
+        margin: 15px 0 0 55px;
+    }
+    #popularText{
+        height: 30px;
+        padding-left: 20px;
+    }
+    .recomCities{
+        width: auto;
+        height: 30px;
+        border-top: 1px solid rgba(223, 221, 221, 0.356);
+    }  
+    .recomCities:hover{
+        background: rgb(235, 235, 235);
+        transition: 0.6s ease-in-out;
+    } 
+    .recomCitiesText{
+        margin: 5px 0 0 20px;
+    }
+    #lastRecom{
+        border-radius: 0 0 10px 10px;
+    }
+    
+                                                                            /*Trending banner*/
+    #trendingProfile{
+        width: auto;
+        height: 45px;
+        margin: 8px 0 0 40px;
+        display: flex;
+    }
+        .logSign{
+            margin-left: 10px;
+            color:  rgba(255, 0, 0, 0.603);
+        }
+
+    #headingText{
+        width: 100%;
+        height: auto;
+        margin-top: 180px;
+        text-align: center;
+        line-height: 10px;
+    }   
+    #headingText h1{
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        font-weight: 300;
+    }
+
+    .grievanceForm{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 200px;
+    }
+    .form{
+        width: 60%;
+        height: auto;
+        padding-left: 20px;
+    }
+    .textFields, .textArea{
+        width: 90%;
+        height: 33px;
+        background: white;
+        margin: 20px 0 40px 0;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid rgb(207, 207, 207);
+        position: relative;
+    }
+    .textInput{
+        width: auto;
+        height: 30px;
+        display: flex;
+        float: left;
+        position: absolute;
+    }
+    #asterisk1,  #asterisk2, #asterisk3, #asterisk4{
+        color: rgb(237, 90, 107);
+        margin-top: 0px;
+    }
+    .text{
+        width: 500px;
+        height: 28px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding-left: 20px;
+        position: absolute;
+    }
+    .placeholder{
+        width: auto;
+        height: auto;
+        position: relative;
+        margin-top: 0px;
+        display: flex;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: rgb(156, 156, 156);
+        background: white;
+        font-size: 18px;     
+    }
+    .placeholderText{
+        margin-top: 5px;
+    }
+    .textFields img{
+        width: 25px;
+        height: 25px;
+        float: right;
+        margin-top: 6px;
+    }
+    .textArea{
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .textArea input{
+        width: 500px;
+        height: 28px;
+        border: none;
+        outline: none;
+        position: absolute;
+    }
+
+    #submitButton{
+        width: 150px;
+        height: 30px;
+        background: rgb(237, 90, 107);
+        padding: 15px 10px 0 10px;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+    }
+    #submitButton:hover{
+        background:  rgb(233, 64, 84);
+    }
+    
+    .grievanceCardContainer{
+        width: 40%;
+        height: auto;
+    }
+    .gCard{
+        width: 390px;
+        height: 200px;
+        background: white;
+        margin: 0 0 30px 10px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(232, 232, 232);
+        box-shadow: rgba(28, 28, 28, 0.08) 0px 0.4rem 0.8rem;
+        cursor: pointer;
+    }
+    .gCard h1{
+        font-size: 28px;
+        font-weight: 300;
+        margin: 30px 0 0 15px;
+        color: rgb(28, 28, 28);
+    }
+    .gCard p{
+        width: 340px;
+        font-size: 20px;
+        margin-left: 15px;
+        color: rgb(79, 79, 79);
+    }
+    .divHeadings{
+        color: rgb(28, 28, 28);
+        font-size: 40px;
+        font-weight: 550;
+        text-align: justify;
+        margin-top: 150px;
+    }
+
+    .cDetailsContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .cDCard{
+        width: auto;
+        height: auto;
+        display: flex;
+        margin: 0 50px 30px 0px;
+    }
+    .cDCard img{
+        width: 50px;
+        height: 30px;
+    }
+    .cDRight{
+        margin-left: 30px;
+        text-align: justify;
+    }
+    .countryName{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin: 0px 0 10px 0;
+    }
+    .telNumber{
+        font-size: 18px;
+        margin: 10px 0 0px 0;
+    }
+
+#footer{
+    width: 100%;
+    height: 350px;
+    margin-top: 300px;
+    font-family: sans-serif;
+    background: rgba(228, 227, 227, 0.288);
+    position: relative;
+}
+    #footerContainer{
+        width: 1100px;
+        height: auto;
+        display: inline-block;
+        text-align: left;
+    }
+    #footerBar{
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        margin-top: 30px;
+    }
+    #footerZomatoText{
+        font-size: 35px;
+        float: left;
+        font-weight: bold;
+        color:  rgba(255, 0, 0, 0.603);
+    }
+    .optionContainer{
+        display: flex;
+        margin: 0 0 0 550px;
+    }
+    .fOption{
+        width: 150px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.288);
+        margin-left: 20px;
+        right: 0px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+    }   
+    .countryFlag{
+        width: 35px;
+        height: 20px;
+        margin: 10px 0 0 10px;
+        border-radius: 4px;
+    }
+    .countryName{
+        margin-left: 15px;
+        font-size: 18px;
+        margin-top: 10px;
+        color: rgb(89, 89, 89);
+    }
+    .optionDiv{
+        width: auto;
+        height: auto;
+        right: 7%;
+        opacity: 0;
+        margin-top: -260px;
+        position: absolute;
+        background: white;
+        padding: 1px 0 10px 0; 
+        color: rgb(130, 130, 130); 
+        box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+        transition: 0.4s ease;
+    }
+    .countryLoc{
+        width: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        right: 25%;
+        margin-top: -160px;
+    }
+    .divTail{
+        width: 20px;
+        height: 20px;
+        background: white;
+        position: absolute;
+        margin-left: 60px;
+        bottom: -10px;
+        right: 30px;
+        transform: rotate(45deg);
+    }
+    .countryCard{
+        width: 150px;
+        display: flex;
+        margin-right: 30px;
+    }
+    .langOption{
+        width: 150px;
+        height: 20px;
+        margin: 20px 0 0 20px;
+        text-align: left;
+    }
+
+    #footerLinksContainer{
+        width: 1100px;
+        height: 200px;
+        margin: 40px 0 0 0;
+        display: inline-flex;
+    }
+
+    .footerLinksCards{
+        width: 200px;
+        height: 200px;
+        margin: 0 20px 0 20px;
+    }
+    .linksHead{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .links{
+        font-size: 15px;
+        font-weight: 100;
+        margin: 10px 0 10px 0;
+        color: rgba(0, 0, 0, 0.479);
+        cursor: pointer;
+    }
+    .links:hover{
+        color:  rgb(97, 97, 97);
+    }
+    #socialMediaLinks{
+        display: flex;
+        margin-top: 20px;
+    }
+    .socialIcon{
+        width: 30px;
+        height: 30px;
+        margin: 0 5px 0 5px;
+    }
+    #download{
+        margin-top: 30px;
+    }
+    .downloadOption{
+        width: 120px;
+        height: 40px;
+        margin: 0 0 5px 0;
+    }

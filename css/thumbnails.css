@@ -1,0 +1,454 @@
+body, html{
+    margin: 0px;
+    background: rgb(238, 238, 238);
+    text-align: center;
+}
+#subBody{
+    width: 1100px;
+    height: auto;
+    display: inline-block;
+}
+#topBar{
+    width: 100%;
+    height: 65px;
+    border-bottom: 1.1px solid rgba(150, 148, 148, 0.158);
+    background: rgba(226, 0, 0, 0.89);
+    margin-top: 0px;
+}
+    #topBarContent{
+        width: 1100px;
+        height: 100%;
+        font-family: sans-serif;
+        display: inline-block;
+    }
+    #trendZomatoText{
+        width: 120px;
+        height: 30px;
+        margin-top: 15px;
+        float: left;
+    }
+
+#trendingProfile{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    display: inline-flex;
+    float: right;
+}
+.logSign{
+    margin-left: 10px;
+}
+
+#mainNavOptions{
+    width: 100%;
+    height: 40px;
+    background: white;
+    box-shadow: 0 4px 6px 0 rgba(36, 36, 36, 0.048), 0 6px 10px 0 rgba(36, 36, 36, 0.048);
+}
+    #navContent{
+        width: 1100px;
+        height: auto;
+        display: inline-flex;
+    }
+    #navLeftPart{
+        display: flex;
+        float: left;
+    }
+    #navRightPart{
+        display: flex;
+        float: right;
+        margin-left: 500px;
+    }
+    .navIcon{
+        width: 32px;
+        height: 32px;
+        margin: 2px 8px 0 10px;
+    }
+    .navText{
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-right: 10px;
+        margin: 10px 10px 0 0;
+    }
+
+#mainContentContainer{
+    width: 1100px;
+    height:  auto;
+    font-family: sans-serif;
+    display: inline-flex;
+}
+    #mainHeading{
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(56, 56, 56);
+        position: relative;
+        text-align: justify;
+    }
+    #leftFilterBar{
+        width: 250px;
+        height: auto;
+        background: white;
+        border: 1px solid rgb(235, 235, 235);
+        display: grid;
+        border-radius: 4px;
+    }
+    .divs{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid  #ebebeb;
+        display: grid;
+        text-align: justify;
+        padding-top: 20px;
+    }
+    #firstHead{
+        margin-bottom: -40px;
+    }
+    #check{
+        margin: 0px 0 0px 0;
+        font-weight: bold;
+        color: rgb(0, 85, 0);
+    }
+    #check:hover, .checkBoxes:hover{
+        color: red;
+    }
+    .checkBoxes{
+        margin: -30px 0 -30px 0;
+        padding-left: 15px;
+    }
+    .checkBox{
+        margin: 0px 0 0px 0;
+    }
+    .checkBoxText{
+        font-size: 15px;
+    }
+    .head{
+        margin: 5px 0 10px 0;
+        font-weight: bold;
+        font-size: 15px;
+        color:  rgb(56, 56, 56);
+    }
+    .sort{
+        width: auto;
+        height: auto;
+        font-size: 13px; 
+        margin: -20px 0 -20px 0;     
+        line-height: 0px;
+    }
+    #level, #order{
+        font-weight: bold;
+    }
+    #level{
+        color: rgb(0, 85, 0);
+        float: left;
+    }
+    #order{
+        color: rgb(119, 119, 119);
+        margin-left: 5px;
+        float: right;
+    }
+    .menu{
+        float: left;
+        margin-right: 10px;
+    }
+    .menu.open{
+        color: rgb(163, 15, 15);
+    }
+    .menu, .rate{
+        margin-top: 0px;    
+        font-size: 12px;
+        color: black;
+    }
+    .rate{
+        float: right;
+        color: rgb(153, 153, 153);  
+    }
+    
+#rightContainer{
+    float: right;
+}
+#topContainer{
+        width: 868px;
+        top: 0px;
+        height: auto;
+        margin: 0 0 20px 20px;
+        display: flex;
+        padding: 0 0 15px 10px;
+        color: rgb(94, 94, 94);
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 4px;
+        background: white;
+    }
+    .searchText, #searchText{
+        font-size: 13px;
+        font-weight: bold;
+        margin: 10px 0 5px 0;
+    }
+    #leftSearchBar, #rightSearchBar{
+        width: auto;
+        height: 15px;
+        display: flex;
+        padding: 10px 0 10px 0;
+        background: #cce2ff;
+        border-radius: 4px;
+    }
+    #left{
+        display: flex;
+        float: left;
+        margin-right: 10px;
+    }
+    .icon{
+        width: 15px;
+        height: 15px;
+        margin: 0 20px 0 15px;
+    }
+    #placeSearchText{
+        width: 220px;
+    }
+    #placeSearchText, #restaurantSearchText{
+        margin: 0px;
+        background: none;
+        border: none;
+        outline: none;
+        visibility: initial;
+    }
+    #right{
+        width: auto;
+        height: 15px;
+        background: rgb(189, 189, 189);
+        padding: 10px 10px 10px 10px;
+        margin-top: -10px;
+        border-radius: 0 4px 4px 0;
+    }
+    #rightPart{
+        margin-left: 30px;
+    }
+    #rightSearchBar{
+        width: auto;
+        background: white;
+        padding-right: 30px;
+        border: 1px solid rgb(218, 218, 218);
+    }
+    #restaurantSearchText{
+        width: 350px;
+    }
+    
+#bottomConatiner{
+    height: auto;
+    width: 915px;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+}
+    .orderCard{
+        width: 430px;
+        height: 215px;
+        background: white;
+        margin: 0 0 10px 20px;
+        cursor: pointer;
+    }
+    .top{
+        width: 445px;
+        height: auto;
+        display: flex;
+    }
+    .cardImg{
+        width: 80px;
+        height: 90px;
+        margin: 20px 10px 0 10px;
+        border-radius: 8px;
+        float: left;
+        object-fit: cover;
+    }
+    .cardDesc{
+        width: 300px;
+        margin-left: 20px;
+    }
+    .cardHead{
+        font-size: 25px;
+        color: #cb202d;
+        margin-bottom: 0px;
+    }
+    .review{
+        display: flex;
+    }
+    .stars{
+        width: 15px;
+        height: 15px;
+        margin-left: 3px;
+    }
+    .ratings{
+        font-size: 15px;
+        color: gray;
+        margin: -1px 0 0 5px;
+    }
+    .midText{
+        font-size: 15px;
+        color: grey;
+        margin-top: 2px;
+        margin: 5px 0 0px 0;
+    }
+    .bottomText{
+        display: flex;
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .min{
+        margin-top: 0px;
+        margin: 0px 10px 0 0;
+    }
+    .bottom{
+        border-top: 1px solid rgb(214, 214, 214);
+    }
+    .orderButton{
+        height: 42px;
+        width: 120px;
+        background: rgba(170, 255, 170, 0.637);
+        text-align: center;
+        float: right;
+        border-left: 1px solid green;
+        color: green;
+    }
+    .orderButton:hover{
+        background: green;
+        color: white;
+    }
+    .buttonText{
+        margin-top: 10px;
+    }
+
+#footer{
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    background: rgba(228, 227, 227, 0.288);
+}
+        #footerContainer{
+            width: 1100px;
+            height: auto;
+            display: inline-block;
+            text-align: left;
+        }
+        #footerBar{
+            width: 100%;
+            height: auto;
+            display: inline-flex;
+            margin-top: 30px;
+        }
+        #footerZomatoText{
+            font-size: 35px;
+            float: left;
+            font-weight: bold;
+            color:  rgba(255, 0, 0, 0.603);
+        }
+        .optionContainer{
+            display: flex;
+            margin: 0 0 0 620px;
+        }
+        .fOption{
+            width: 150px;
+            height: 40px;
+            border: 1px solid rgba(0, 0, 0, 0.288);
+            margin-left: 20px;
+            right: 0px;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+        }   
+        .countryFlag{
+            width: 35px;
+            height: 20px;
+            margin: 10px 0 0 10px;
+            border-radius: 4px;
+        }
+        .countryName{
+            margin-left: 15px;
+            font-size: 18px;
+            margin-top: 10px;
+            color: rgb(89, 89, 89);
+        }
+        .optionDiv{
+            width: auto;
+            height: auto;
+            right: 14%;
+            opacity: 0;
+            margin-top: -250px;
+            position: absolute;
+            background: white;
+            padding: 1px 0 10px 0; 
+            color: rgb(130, 130, 130); 
+            box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+            transition: 0.4s ease;
+        }
+        .countryLoc{
+            width: 550px;
+            display: flex;
+            flex-wrap: wrap;
+            right: 27%;
+            margin-top: -190px;
+        }
+        .divTail{
+            width: 20px;
+            height: 20px;
+            background: white;
+            position: absolute;
+            margin-left: 60px;
+            bottom: -10px;
+            right: 30px;
+            transform: rotate(45deg);
+        }
+        .countryCard{
+            width: 150px;
+            display: flex;
+            margin-right: 30px;
+        }
+        .langOption{
+            width: 150px;
+            height: 20px;
+            margin: 20px 0 0 20px;
+            text-align: left;
+        }
+    
+        #footerLinksContainer{
+            width: 1100px;
+            height: 200px;
+            margin: 40px 0 0 0;
+            display: inline-flex;
+        }
+    
+        .footerLinksCards{
+            width: 200px;
+            height: 200px;
+            margin: 0 30px 0 30px;
+        }
+        .linksHead{
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .links{
+            font-size: 15px;
+            font-weight: 100;
+            margin: 10px 0 10px 0;
+            color: rgba(0, 0, 0, 0.479);
+        }
+        .links:hover{
+            color:  rgb(97, 97, 97);
+        }
+        #socialMediaLinks{
+            display: flex;
+            margin-top: 20px;
+        }
+        .socialIcon{
+            width: 30px;
+            height: 30px;
+            margin: 0 5px 0 5px;
+        }
+        #download{
+            margin-top: 30px;
+        }
+        .downloadOption{
+            width: 120px;
+            height: 40px;
+            margin: 0 0 5px 0;
+        }
